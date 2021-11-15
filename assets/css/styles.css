@@ -1,0 +1,376 @@
+/* IMPORT GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Work+Sans:wght@400;500;700&display=swap");
+
+/* reet of page ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* raiz, cores, letras, fonts, tamanho */
+:root {
+  --bg-page: #51a9e4;
+  --bg-page-second: #dfdfdf;
+  --bg-page-bd: #f1f1f1;
+  --bg-cards: #2b7bb1e0;
+  --bg-hover-cards: #2313b4;
+
+  --color-line: #00305a;
+  --color-line-2: #022b50;
+  --color-letter: #ffffff;
+
+  --fontSizeLight: 1rem; /* 16px */
+  --fontSizeMedium: 1.12rem; /* 18px */
+  --fontSizeFooter: 1.2rem;
+  --fontSizeBold: 2.5rem; /* 18px */
+  --fontSizeStrong: 4.5rem;
+
+  --fontFamilyNormal: "Poppins", sans-serif;
+  --fontFamilyDif: "Work Sans", sans-serif;
+
+  --fontWeightLight: 400;
+  --fontWeightMedium: 600;
+  --fontWeightBold: 700;
+}
+
+/* background fundo ===================*/
+body {
+  background: var(--bg-page-bd);
+}
+
+/* SEPARAR */
+.separator {
+  height: 1px;
+  background: linear-gradient(270deg, var(--bg-page-bd), var(--color-line-2));
+  margin-bottom: 2rem;
+}
+
+/* entre em contato */
+address > a {
+  color: var(--bg-page);
+}
+
+/* SIDEBAR ===================== */
+.logo {
+  /*   width: 6rem; */
+  top: 11%;
+  right: 40%;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.icons {
+  width: 2.5rem; /* 40px */
+  height: 2.5rem;
+
+  margin-top: 4rem;
+}
+
+.icons:hover {
+  width: 3.5rem;
+  border-left: solid var(--bg-hover-cards);
+  border-left-width: 0.2rem;
+}
+
+/* CONTEUDO DE FESTA ============================ */
+.textContainer {
+  height: 30rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  color: var(--color-letter);
+  background: var(--bg-page);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContent {
+  margin: 1rem;
+}
+
+h1,
+p {
+  font-size: 2rem;
+  font-family: var(--fontFamilyDif);
+}
+
+.price {
+  font-size: 1rem;
+  font-family: var(--fontFamilyNormal);
+}
+
+.imgTicket {
+  width: 50%;
+  height: 25rem;
+  font-size: 1rem;
+
+  border-radius: 5px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="number"] {
+  width: 4rem;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0.25rem;
+}
+
+button:hover {
+  color: var(--bg-page);
+  transition: 2s;
+}
+
+/* CADASTRO INICIAL =================== */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--bg-page-second);
+}
+
+.content {
+  background: var(--color-letter);
+  border-radius: 0.95rem; /* 15px */
+  width: 60rem; /* 960px */
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  background: var(--bg-cards);
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 0.95rem;
+  border-bottom-left-radius: 0.95rem;
+
+  left: 0;
+}
+
+.title {
+  font-size: var(--fontSizeBold);
+  font-weight: var(--fontWeightMedium);
+  font-family: var(--fontFamilyNormal);
+  text-transform: capitalize;
+}
+
+.title-primary,
+.description-primary {
+  color: var(--color-letter);
+}
+
+.btn {
+  border-radius: 0.95rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 3.15rem; /* 10px 50px */
+  cursor: pointer;
+  font-weight: bold;
+  width: 9.3rem; /* 150px */
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-letter);
+}
+
+.btn-primary {
+  background: transparent;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.btn-second {
+  background: var(--bg-cards);
+  border: 1px solid var(--bg-cards);
+  transition: 0.5s;
+}
+
+.first-content {
+  display: flex;
+}
+
+.first-content .second-column {
+  z-index: 11;
+}
+
+.first-column {
+  text-align: center;
+  width: 40%;
+  z-index: 10;
+}
+
+.second-column {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.form > h1 {
+  color: var(--bg-cards);
+  font-family: var(--fontFamilyDif);
+  font-size: var(--fontSizeBold);
+  font-weight: var(--fontWeightMedium);
+}
+
+.form input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.label-input {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+/* CARROSEL ========================== */
+.carousel-caption > h3 {
+  color: var(--color-letter);
+}
+
+.carousel-caption > p {
+  color: #43baca;
+}
+
+/* projetos - destaques of songs ============================== */
+main #projetos .container > h1 {
+  font-size: var(--fontSizeStrong);
+  font-family: var(--fontFamilyNormal);
+  color: var(--color-letter);
+}
+
+main #projetos {
+  padding: 6.25rem 3.5rem; /* 100px 50px */
+  text-align: center;
+  background-color: var(--bg-page);
+}
+
+main #projetos .larguraMaxContainer h2 {
+  padding-bottom: 20px;
+  color: var(--color-letter);
+  font-size: var(--fontSizeStrong);
+  font-family: var(--fontFamilyDif);
+  font-weight: var(--fontWeight);
+}
+
+main #projetos .larguraMaxContainer div {
+  margin: 1.56rem 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+main #projetos .larguraMaxContainer div > article {
+  height: auto;
+  flex-grow: 1;
+  flex-basis: calc(33% - 20px);
+  background: var(--bg-cards);
+  padding: 1.87rem 1.56rem; /* 30px 25px */
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px dashed #fff;
+
+  font-size: var(--fontSizeMedium);
+  font-family: var(--fontFamilyNormal);
+  font-weight: var(--fontWeight);
+}
+
+main #projetos .larguraMaxContainer div > article:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 1rem var(--bg-cards);
+}
+
+main #projetos .larguraMaxContainer div > article img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+main #projetos .larguraMaxContainer div > article h3 {
+  font-size: 2.4rem;
+  color: var(--color-letter);
+  font-weight: 500;
+}
+
+main #projetos .larguraMaxContainer div > article p {
+  line-height: 1.75rem; /* 28px */
+  margin-top: 1.25rem;
+  font-size: 1.6rem;
+  color: var(--color-letter);
+}
+
+main #projetos .larguraMaxContainer a {
+  font-size: 1.12rem;
+  position: relative;
+  text-decoration: none;
+  color: var(--color-letter);
+
+  font-size: var(--fontSizeLight);
+  font-family: var(--fontFamilyDif);
+  font-weight: var(--fontWeight);
+}
+
+main #projetos .larguraMaxContainer a:hover {
+  border-bottom: 2px solid var(--bg-hover-cards);
+}
+
+main #projetos .larguraMaxContainer button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
+main #projetos .larguraMaxContainer .button {
+  font-size: 1.5rem;
+}
+
+main #projetos .larguraMaxContainer button:hover {
+  cursor: pointer;
+}
+
+/* FOOTER =========== */
+footer {
+  padding: 4rem;
+  text-align: center;
+
+  font-size: var(--fontSizeFooter);
+  font-family: var(--fontFamilyDif);
+  font-weight: var(--fontWeightLight);
+
+  color: var(--color-letter);
+}
+
+@media screen and (min-width: 425px) {
+  
+}
