@@ -6,30 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>Document</title>
+    <title> <?php echo $_SESSION['nome']; ?></title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
 
-    <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block" style="width:5%">
-        <h3 class="w3-bar-item">
-            <a href="home.html">
-                <img class="logo" src="../assets/images/ticket.svg" alt="logo">
-            </a>
-        </h3>
-        <a href="songs.html" class="w3-bar-item">
-            <img class="icons" src="../assets/images/songs.svg" alt="logo">
-        </a>
-        <a href="concerts.html" class="w3-bar-item">
-            <img class="icons" src="../assets/images/show.svg" alt="logo">
-        </a>
-        <a href="party.html" class="w3-bar-item">
-            <img class="icons" src="../assets/images/party.svg" alt="logo">
-        </a>
-    </div>
+    <?php include '../sidebar.php'; ?>
 
     <!-- Page Content -->
     <div style="margin-left:5%">
@@ -44,11 +28,10 @@
                                 <!-- Festa do Povo Animado -->
                                 <article class="cards-interval">
                                     <h3>Show da Camila Cabello</h3>
-                                    <img src="../assets/images/camilacabello.jpg"
-                                        alt="Foto de Festa de um Povo Animado">
+                                    <img src="../assets/images/camilacabello.jpg" alt="Foto de Festa de um Povo Animado">
                                     <div>
                                         <button>
-                                            <a href="home.html" target="_blank" class="button">
+                                            <a href="home.php" target="_blank" class="button">
                                                 Em breve
                                             </a>
                                         </button>
@@ -61,7 +44,7 @@
                                     <img src="../assets/images/lanadelrey.jpg" alt="Show da Lana Del Rey">
                                     <div>
                                         <button>
-                                            <a href="buyticketshow.html" target="_blank" class="button">
+                                            <a href="buyticketshow.php" target="_blank" class="button">
                                                 Saiba mais
                                             </a>
                                         </button>
@@ -74,7 +57,7 @@
                                     <img src="../assets/images/ladygaga.jpg" alt="Teatro da Casa dos Gucci">
                                     <div>
                                         <button>
-                                            <a href="home.html" target="_blank" class="button">
+                                            <a href="home.php" target="_blank" class="button">
                                                 Em breve
                                             </a>
                                         </button>
@@ -85,7 +68,7 @@
                                     <img src="../assets/images/imagedragons.jpg" alt="Teatro da Casa dos Gucci">
                                     <div>
                                         <button>
-                                            <a href="home.html" target="_blank" class="button">
+                                            <a href="home.php" target="_blank" class="button">
                                                 Em breve
                                             </a>
                                         </button>
@@ -93,10 +76,7 @@
                                 </article>
                             </div>
 
-                            <footer class="footer">
-                                <p>💜 Created by Shayane and Charles.</p>
-                                <p>@ Todos os direitos reservados.</p>
-                            </footer>
+                            <?php include '../footer.php'; ?>
             </main>
         </div>
     </div>
