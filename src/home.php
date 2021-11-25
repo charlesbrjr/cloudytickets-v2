@@ -11,30 +11,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
+    <title> <?php echo $_SESSION['nome']; ?></title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <body>
 
-    <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block sidebar" style="width:5%">
-        <h3 class="w3-bar-item">
-            <a href="home.html">
-                <img class="logo" src="../assets/images/ticket.svg" alt="logo">
-            </a>
-        </h3>
-        <a href="songs.html" class="w3-bar-item">
-            <img class="icons" src="../assets/images/songs.svg" alt="logo">
-        </a>
-        <a href="concerts.html" class="w3-bar-item">
-            <img class="icons" src="../assets/images/show.svg" alt="logo">
-        </a>
-        <a href="party.html" class="w3-bar-item">
-            <img class="icons" src="../assets/images/party.svg" alt="logo">
-        </a>
-    </div>
+    <?php include '../sidebar.php'; ?>
 
     <!-- Page Content -->
     <div style="margin-left:5%">
@@ -57,8 +41,7 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img src="../assets/images/camilacabello.jpg" alt="camila cabello"
-                                        style="width:100%;">
+                                    <img src="../assets/images/camilacabello.jpg" alt="camila cabello" style="width:100%;">
                                     <div class="carousel-caption">
                                         <h3>Camila Cabello</h3>
                                         <p>LA é sempre muito divertido!</p>
@@ -66,8 +49,7 @@
                                 </div>
 
                                 <div class="item">
-                                    <img src="../assets/images/imagedragons.jpg" alt="imagine dragons"
-                                        style="width:100%;">
+                                    <img src="../assets/images/imagedragons.jpg" alt="imagine dragons" style="width:100%;">
                                     <div class="carousel-caption">
                                         <h3>Imagine Dragons</h3>
                                         <p>Próximo show em SP!</p>
@@ -102,7 +84,7 @@
                                 <h3>Festa do Povo Animado</h3>
                                 <img src="../assets/images/povoanimado.jpg" alt="Foto de Festa de um Povo Animado">
                                 <div>
-                                    <a href="buyticketparty.html" target="_blank" class="button">
+                                    <a href="buyticketparty.php" target="_blank" class="button">
                                         Saiba mais
                                     </a>
                                 </div>
@@ -113,7 +95,7 @@
                                 <h3>Show da Lana Del Rey</h3>
                                 <img src="../assets/images/lanadelrey.jpg" alt="Show da Lana Del Rey">
                                 <div>
-                                    <a href="buyticketshow.html" target="_blank" class="button">
+                                    <a href="buyticketshow.php" target="_blank" class="button">
                                         Saiba mais
                                     </a>
                                 </div>
@@ -125,18 +107,14 @@
                                 <img src="../assets/images/houseofGucci.jpg" alt="Teatro da Casa dos Gucci">
                                 <div>
 
-                                    <a href="buyticketconcerts.html" target="_blank" class="button">
+                                    <a href="buyticketconcerts.php" target="_blank" class="button">
                                         Saiba mais
                                     </a>
 
                                 </div>
                             </article>
                         </div>
-
-                        <footer class="footer">
-                            <p>💜 Created by Shayane and Charles.</p>
-                            <p>@ Todos os direitos reservados.</p>
-                        </footer>
+                        <?php include '../footer.php'; ?>
             </main>
 
 </body>
