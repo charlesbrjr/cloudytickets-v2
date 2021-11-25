@@ -172,7 +172,7 @@ button:hover {
 
 .title-primary,
 .description-primary {
-  color: var(--color-letter);
+  color: var(--bg-cards);
 }
 
 .btn {
@@ -234,14 +234,21 @@ a {
 }
 
 .form > h1 {
-  color: var(--bg-cards);
+  color: var(--color-letter);
   font-family: var(--fontFamilyDif);
   font-size: var(--fontSizeBold);
   font-weight: var(--fontWeightMedium);
 }
 
+.formRegister {
+  color: var(--bg-cards);
+  font-family: var(--fontFamilyDif);
+  font-size: var(--fontSizeBold);
+  font-weight: var(--fontWeight);
+}
+
 .form input {
-  height: 45px;
+  height: 50px;
   width: 100%;
   outline: none;
   border: none;
@@ -251,6 +258,12 @@ a {
   display: flex;
   align-items: center;
   margin: 0.5rem;
+}
+
+.label-input-login {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
 }
 
 /* CARROSEL ========================== */
@@ -371,6 +384,3 @@ footer {
   color: var(--color-letter);
 }
 
-@media screen and (min-width: 425px) {
-  
-}
