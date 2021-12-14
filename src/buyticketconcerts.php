@@ -9,7 +9,7 @@
     <title> cloudyticket </title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/buytickets.css">
 </head>
@@ -44,7 +44,9 @@
                 <a href="search.php">
                     <button>Ingressos vendidos</button>
                 </a>
-                <a href="../upload.php">[Anexar Documento]</a>
+                <a href="../upload.php">
+                    <button class="document">[Anexar Documento]</button>
+                </a>
                 <address>
                     <a href="mailto:learningitprogramming@gmail.com">Entre em contato</a>
                 </address>

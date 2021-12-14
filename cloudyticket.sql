@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08-Dez-2021 às 16:11
+-- Tempo de geração: 14-Dez-2021 às 20:40
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.4.13
 
@@ -92,7 +92,13 @@ INSERT INTO `usuario` (`id_usuario`, `nome`, `email`, `senha`) VALUES
 (13, 'pedro', 'pedro@hotmail.com', '3242354235'),
 (14, 'Ian', 'ian@hotmail.com', '23452345234'),
 (15, 'paulo', 'paulovc@gmail.com', '98740957'),
-(16, 'matheus', 'mateus@gmail.com', '876543');
+(16, 'matheus', 'mateus@gmail.com', '876543'),
+(17, 'Caio ', 'caio@hotmail.com', '23876594823'),
+(18, 'George', 'george@hotmail.com', '6245647546'),
+(19, 'Rodrigo', 'ogitdornyc@gmail.com', '24253254'),
+(20, 'João Victor', 'joaovictor@gmail.com', '4352645739856348754'),
+(21, 'Felipe', 'fla@gmail.com', '2352345423'),
+(22, 'Lucas Barbosa', 'lubquinhas@gmail.com', '264236543');
 
 --
 -- Índices para tabelas despejadas
@@ -138,7 +144,7 @@ ALTER TABLE `ingresso`
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- Restrições para despejos de tabelas

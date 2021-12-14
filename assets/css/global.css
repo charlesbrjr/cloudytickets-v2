@@ -1,3 +1,6 @@
+@import url("../css/reset.css");
+@import url("../css/styles.css");
+
 :root {
   --bg-page: #51a9e4;
   --bg-page-second: #dfdfdf;
@@ -11,7 +14,6 @@
 
   --fontSizeLight: 1rem; /* 16px */
   --fontSizeMedium: 1.12rem; /* 18px */
-  --fontSizeFooter: 1.2rem;
   --fontSizeBold: 2.5rem; /* 18px */
   --fontSizeStrong: 4.5rem;
 
@@ -43,7 +45,7 @@ address > a {
 /* SIDEBAR ===================== */
 .logo {
   top: 11%;
-  right: 40%;
+  right: 20%;
   position: relative;
   transform: rotate(45deg);
 }
@@ -77,9 +79,38 @@ address > a {
   margin-left: 2%;
 }
 
-#sidebar {
-  margin: 2%;
+/* SIDEBAR =========================*/
+.sidebar {
+  height: 100%;
+  width: 80px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: var(--bg-page-bd);
+  overflow-x: hidden;
+  padding-top: 16px;
 }
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* @media screen and (max-height: 450px) {
+} */
 
 /* projetos - destaques of songs ============================== */
 main #projetos .container > h1 {
@@ -183,7 +214,7 @@ footer {
   padding: 4rem;
   text-align: center;
 
-  font-size: var(--fontSizeFooter);
+  font-size: var(--fontSizeLight);
   font-family: var(--fontFamilyDif);
   font-weight: var(--fontWeightLight);
 

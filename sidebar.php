@@ -15,20 +15,18 @@
 <body>
 
     <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block" id="sidebar">
-        <h3 class="w3-bar-item">
-            <a href="home.php">
-                <img class="logo" src="../assets/images/ticket.svg" alt="logo">
-            </a>
-        </h3>
-        <a href="songs.php" class="w3-bar-item">
-            <img class="icons" src="../assets/images/songs.svg" alt="logo">
+    <div class="sidebar">
+        <a href="./src/home.php">
+            <img class="logo" src="../assets/images/ticket.svg" alt="">
         </a>
-        <a href="concerts.php" class="w3-bar-item">
-            <img class="icons" src="../assets/images/show.svg" alt="logo">
+        <a href="./src/songs.php">
+            <img class="icons" src="../assets/images/songs.svg" alt="">
         </a>
-        <a href="party.php" class="w3-bar-item">
-            <img class="icons" src="../assets/images/party.svg" alt="logo">
+        <a href="./src/concerts.php">
+            <img class="icons" src="../assets/images/show.svg" alt="">
+        </a>
+        <a href="./src/party.php">
+            <img class="icons" src="../assets/images/party.svg" alt="">
         </a>
     </div>
 </body>

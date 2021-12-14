@@ -9,7 +9,7 @@
     <title>cloudyticket</title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/buytickets.css">
 
@@ -22,7 +22,7 @@
     <div id="container">
         <div class="w3-container">
             <div class="textContainer">
-                <img class="imgTicket" src="../assets/images/houseofGucci.jpg">
+                <img class="imgTicket" src="../assets/images/teatro.png">
             </div>
             <div class="textContent">
                 <p class="text">

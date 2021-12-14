@@ -10,7 +10,7 @@
 
     function Logar($email, $senha, $dbOpen)
     {
-        $sql = "SELECT email FROM usuario WHERE email = '$email' and senha ='$senha';";
+        $sql = "SELECT id FROM usuario WHERE email = '$email' and senha ='$senha';";
         $res = mysqli_query($dbOpen, $sql);
         $aux = mysqli_fetch_array($res);
         $id = $aux[0];
@@ -23,7 +23,7 @@
         if ($row == 1) {
             header("Location: home.php");
         } else {
-            header("Location: login.php?erro=true?");
+            header("Location: login.php?erro=true");
         }
     }
     ?>
@@ -31,7 +31,7 @@
     <!-- STYLES -->
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/global.css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
                         <input type="submit" class="btn btn-second" value="Entrar" name="entrar" onclick="Logar()" />
                     </form>
                 </div>
-                <form class="form" action="validar.php" method="POST">
+                <form class="form" action="register.php" method="POST">
                     <h1 class="formRegister">Crie sua conta</h1>
                     <p class="description description-primary">Se conecte com o nosso grupo.</p>
                     <label class="label-input">

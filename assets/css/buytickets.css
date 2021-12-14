@@ -1,3 +1,7 @@
+@import url("../css/reset.css");
+@import url("../css/global.css");
+@import url("../css/styles.css");
+
 /* BUT TICKET */
 .ticketBuy {
   background-color: #fff;
@@ -59,4 +63,8 @@ button {
 button:hover {
   color: var(--bg-page);
   transition: 2s;
+}
+
+.document {
+  color: #000;
 }

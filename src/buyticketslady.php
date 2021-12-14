@@ -22,7 +22,7 @@
     <div id="container">
         <div class="w3-container">
             <div class="textContainer">
-                <img class="imgTicket" src="../assets/images/lanadelrey.jpg">
+                <img class="imgTicket" src="../assets/images/ladygaga.jpg">
             </div>
             <div class="textContent">
                 <p class="text">
