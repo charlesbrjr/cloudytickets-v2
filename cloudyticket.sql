@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 30-Nov-2021 às 21:02
+-- Tempo de geração: 08-Dez-2021 às 16:11
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.4.13
 
@@ -33,6 +33,13 @@ CREATE TABLE `eventos` (
   `qtd_ingresso` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Extraindo dados da tabela `eventos`
+--
+
+INSERT INTO `eventos` (`id_evento`, `atracao`, `qtd_ingresso`) VALUES
+(1, 'Show da Lana Del Rey', 40);
+
 -- --------------------------------------------------------
 
 --
@@ -44,6 +51,13 @@ CREATE TABLE `ingresso` (
   `FK_EVENTOS_id_evento` int(11) DEFAULT NULL,
   `FK_USUARIO_id_usuario` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `ingresso`
+--
+
+INSERT INTO `ingresso` (`id_ingresso`, `FK_EVENTOS_id_evento`, `FK_USUARIO_id_usuario`) VALUES
+(1, 1, 3);
 
 -- --------------------------------------------------------
 
@@ -69,7 +83,16 @@ INSERT INTO `usuario` (`id_usuario`, `nome`, `email`, `senha`) VALUES
 (4, 'shayane ', 'shayane@gmail.com', '12345'),
 (5, 'jose', 'jose@gmail.com', '78906'),
 (6, 'Gabriel', 'gabriel@hotmail.com.br', '45678'),
-(7, 'Pedro', 'pedro@yahoo.com', '567432');
+(7, 'Pedro', 'pedro@yahoo.com', '567432'),
+(8, 'Bruno', 'bruno@gmail.com', '23451'),
+(9, 'Flavia', 'flavia@gmail.com', '876301232'),
+(10, 'Alessandra', 'ale@gmail.com', '7463905034'),
+(11, 'Emanuel', 'emanuel@hotmail.com', '3258203489'),
+(12, 'Jose', 'jose@hotmail.com', '634756754674567'),
+(13, 'pedro', 'pedro@hotmail.com', '3242354235'),
+(14, 'Ian', 'ian@hotmail.com', '23452345234'),
+(15, 'paulo', 'paulovc@gmail.com', '98740957'),
+(16, 'matheus', 'mateus@gmail.com', '876543');
 
 --
 -- Índices para tabelas despejadas
@@ -103,19 +126,19 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `eventos`
 --
 ALTER TABLE `eventos`
-  MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `ingresso`
 --
 ALTER TABLE `ingresso`
-  MODIFY `id_ingresso` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_ingresso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Restrições para despejos de tabelas

@@ -57,8 +57,8 @@
                                     <img src="../assets/images/ladygaga.jpg" alt="Teatro da Casa dos Gucci">
                                     <div>
                                         <button>
-                                            <a href="home.php" target="_blank" class="button">
-                                                Em breve
+                                            <a href="buyticketslady.php" target="_blank" class="button">
+                                                Saiba mais
                                             </a>
                                         </button>
                                     </div>

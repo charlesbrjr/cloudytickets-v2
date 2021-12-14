@@ -6,24 +6,26 @@
 
 <br>
 
-## Como rodar o projeto 
-
-Abra o XAMPPm na pasta `htdocs` e execute em `localhost`
-Adicione o código de sql ao seu phpMyAdmin para gerar o banco de dados 
-
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-![HTML](https://img.shields.io/badge/-HTML-05122A?style=for-the-badge&logo=HTML5&logoColor=html)&nbsp;
-![CSS](https://img.shields.io/badge/-CSS-05122A?style=for-the-badge&logo=CSS3&logoColor=css)&nbsp;
-![PHP](https://img.shields.io/badge/-PHP-05122A?style=for-the-badge&logo=PHP&logoColor=php)&nbsp;
+![HTML](https://img.shields.io/badge/-HTML-FFDAB9?style=for-the-badge&logo=HTML5&logoColor=html)&nbsp;
+![CSS](https://img.shields.io/badge/-CSS-87CEEB?style=for-the-badge&logo=CSS3&logoColor=css)&nbsp;
+![PHP](https://img.shields.io/badge/-PHP-DDA0DD?style=for-the-badge&logo=PHP&logoColor=php)&nbsp;
+![SQL](https://img.shields.io/badge/-SQL-D8BFD8?style=for-the-badge&logo=SQL&logoColor=sql)
+
+# Bibliotecas
+
+- Google Fonts
+- Icons8
+-
 
 ## 💻 Projeto
 
-O projeto Power Ticket'sc é baseado em um site onde o usuário pode visualizar compras de ingresso. Sendo para, show, festas ou teatro. Atrações como Lana del Rey, Camila Cabello, Imagine Dragons etc...
+O projeto CloudyTickets é baseado em um site onde o usuário pode visualizar compras de ingresso. Sendo para, show, festas ou teatro. Atrações como Lana del Rey, Camila Cabello, Imagine Dragons etc...
 
-## Visite o Site (fora do ar)
+## Visite o Site
 
 - [Clique aqui](https://shateixeira.github.io/cloudytickets-v2/)
 

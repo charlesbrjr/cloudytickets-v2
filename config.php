@@ -12,7 +12,4 @@ $dbOpen = mysqli_connect($host_db, $user_db, $password_db, $name_db);
 if (!$dbOpen) {
     die("Error de conexão." . mysqli_connect_error());
 }
-
-echo "Conexão feito com sucesso.";
-
 ?>

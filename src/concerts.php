@@ -24,7 +24,7 @@
                         <h1>Teatro</h1>
                         <div class="larguraMaxContainer">
                             <div>
-                                <!-- Festa do Povo Animado -->
+                                <!-- House of Gucci -->
                                 <article class="cards-interval">
                                     <h3>Teatro House of Gucci</h3>
                                     <img src="../assets/images/houseofGucci.jpg" alt="Foto de Festa de um Povo Animado">
@@ -37,15 +37,14 @@
                                     </div>
                                 </article>
 
-                                <!-- Lana Del Rey -->
+                                <!-- Teatro Peça de Bras Cubas -->
                                 <article class="cards-interval">
                                     <h3>Teatro Peça Memórias Póstumas de Brás Cubas</h3>
-                                    <img src="../assets/images/teatro.png"
-                                        alt="Teatro Peça Memórias Póstumas de Brás Cubas">
+                                    <img src="../assets/images/teatro.png" alt="Teatro Peça Memórias Póstumas de Brás Cubas">
                                     <div>
                                         <button>
-                                            <a href="home.php" target="_blank" class="button">
-                                                Em breve
+                                            <a href="buyticketconcertsmemorias.php" target="_blank" class="button">
+                                                Saiba mais
                                             </a>
                                         </button>
                                     </div>

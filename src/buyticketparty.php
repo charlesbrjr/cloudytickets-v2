@@ -31,9 +31,13 @@
                 </p>
                 <label>Quantidade de Ingressos</label>
                 <input type="number" name="qtdticket" min="0">
-                <a href="home.php">
+                <a href="ticket.php">
                     <button>Comprar Ingressos</button>
                 </a>
+                <a href="search.php">
+                    <button>Ingressos vendidos</button>
+                </a>
+                <a href="../upload.php">[Anexar Documento]</a>
                 <address>
                     <a href="mailto:learningitprogramming@gmail.com">Entre em contato</a>
                 </address>

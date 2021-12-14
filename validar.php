@@ -11,10 +11,12 @@ if ($registro == "Registrar") {
     $senha = $_POST['senha'];
     mysqli_query($dbOpen, "INSERT INTO usuario(nome, email, senha) VALUES('$nome', '$email', $senha)");
     mysqli_close($dbOpen);
-    header("Location: src/home.php");
+    header("Location: ./src/home.php");
 }
 
 
+/* VALIDAR */
+/* 
 $btnLogin = filter_input(INPUT_POST, 'entrar', FILTER_SANITIZE_STRING);
 
 if ($btnLogin) {
@@ -28,16 +30,16 @@ if ($btnLogin) {
         echo "Seu e-mail é " . $email;
         echo $erro = 1;
     }
-
+ */
     //Verifica se o campo nome não está em branco.
-    $nome = $_POST["nome"];
+/*     $nome = $_POST["nome"];
     if (empty($nome) or strstr($nome, '') == false) {
         echo ("Favor digitar seu nome");
         echo $erro = 1;
     }
 
     $senha = $_POST["senha"];
-    if ($_POST) {
+    if ($senha) {
         $senha = $_POST['senha'];
         if ($senha == "") {
             $mensagem = "<span class='aviso'><b>Aviso</b>: Senha não foi alterada!</span>";
@@ -51,13 +53,14 @@ if ($btnLogin) {
 
     $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
     $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
-    $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
+    $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING); */
 
-    echo "$email - $senha";
 
-    if ((!empty($email)) && (!empty($senha))) {
+
+    /* SENHA CRIPTOGRAFADA ======================== */
+   /*  if ((!empty($email)) && (!empty($senha))) {
         //Gerar a senha criptografa
-        echo password_hash($senha, PASSWORD_DEFAULT);
+        echo md5($senha, PASSWORD_DEFAULT);
         //Pesquisar o usuário no BD
         $result_usuario = "SELECT id, nome, email, senha FROM usuario WHERE email='$email' LIMIT 1";
         $resultado_usuario = mysqli_query($dbOpen, $result_usuario);
@@ -67,18 +70,17 @@ if ($btnLogin) {
                 $_POST['id'] = $row_usuario['id'];
                 $_POST['nome'] = $row_usuario['nome'];
                 $_POST['email'] = $row_usuario['email'];
-                $_POST['senha'] = $row_usuario['senha'];
-            } /* else {
+                $_POST['senha'] = $row_usuario['senha']; */
+           /*  } */ /* else {
                 $_SESSION['msg'] = "Login e senha incorreto!";
                 header("Location: login.php");
             } */
-        }
-    } /* else {
+        /* } */
+  /*   } */ /* else {
         $_SESSION['msg'] = "Login e senha incorreto!";
         header("Location: login.php");
     } */
-} /* else {
+/* } */ /* else {
     $_SESSION['msg'] = "Página não encontrada";
     header("Location: login.php");
-}
- */
+} */

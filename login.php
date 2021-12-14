@@ -1,31 +1,72 @@
-<?php
-/* include "config.php";
+<!-- 
+    Dupla: Charles Junior e Shayane Teixeira
+-->
+<!DOCTYPE html>
+<html lang="pt_BR">
 
-#Verifica se tem um email para pesquisa
-if (isset($_POST['email'])) {
+<head>
+    <?php
+    include "./config.php";
 
-    #Recebe o Email Postado
-    $emailLogin = $_POST['email'];
+    function Logar($email, $senha, $dbOpen)
+    {
+        $sql = "SELECT email FROM usuario WHERE email = '$email' and senha ='$senha';";
+        $res = mysqli_query($dbOpen, $sql);
+        $aux = mysqli_fetch_array($res);
+        $id = $aux[0];
 
-    $sql = mysqli_query($dbOpen, "SELECT * FROM usuarios WHERE email = '{$emailLogin}'") or print mysqli_error($dbOpen);
+        session_start();
 
-    #Se o retorno for maior do que zero, diz que já existe um.
-    if (mysqli_num_rows($sql) > 0) {
-        echo json_encode(array('email' => 'Ja existe um usuario cadastrado com este email'));
-    } else {
-        echo json_encode(array('email' => 'Usuário valido.'));
+        $_SESSION['id'] = $id;
+
+        $row = mysqli_fetch_row($res);
+        if ($row == 1) {
+            header("Location: home.php");
+        } else {
+            header("Location: login.php?erro=true?");
+        }
     }
-} */
-?>
+    ?>
+    <title>Site de Música</title>
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-<form class="form" action="login.php" method="POST">
-    <h1>Entre com o seu Login</h1>
-    <label class="label-input-login">
-        <input name="emailLogin" id="emailLogin" type="email" placeholder="E-mail">
-    </label>
+<body>
+    <main>
+        <div class="header">
+            <div class="content first-content">
+                <div class="first-column">
+                    <form class="form" action="login.php" method="POST">
+                        <h1>Entre com o seu Login</h1>
+                        <label class="label-input-login">
+                            <input name="emailLogin" id="emailLogin" type="email" placeholder="E-mail">
+                        </label>
 
-    <label class="label-input-login">
-        <input name="senhaLogin" id="senhaLogin" type="password" placeholder="Senha">
-    </label>
-    <input type="submit" class="btn btn-second" value="Entrar" name="entrar" />
-</form>
+                        <label class="label-input-login">
+                            <input name="senhaLogin" id="senhaLogin" type="password" placeholder="Senha">
+                        </label>
+                        <input type="submit" class="btn btn-second" value="Entrar" name="entrar" onclick="Logar()" />
+                    </form>
+                </div>
+                <form class="form" action="validar.php" method="POST">
+                    <h1 class="formRegister">Crie sua conta</h1>
+                    <p class="description description-primary">Se conecte com o nosso grupo.</p>
+                    <label class="label-input">
+                        <input name="nome" id="nome" type="text" placeholder="Nome">
+                    </label>
+                    <label class="label-input">
+                        <input name="email" id="email" type="email" placeholder="E-mail">
+                    </label>
+                    <label class="label-input">
+                        <input name="senha" id="senha" type="password" placeholder="Senha">
+                    </label>
+                    <input type="submit" class="btn btn-second" value="Registrar" name="registrar" />
+                </form>
+            </div>
+        </div>
+    </main>
+    <?php include 'footer.php'; ?>
+</body>
+
+</html>

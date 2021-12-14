@@ -1,8 +1,17 @@
-Precisa ter na aplicação
+Tasks
 
-// TODO 1. modificar o css 
+// TODO nome na página
 
-// TODO 2. validação dos campos de form SE falhar exibir uma mensagem de forma legal
+// TODO verificação de login
 
-// TODO 8. Upload de arquivo - ULTIMA COISA
--> criar uma tela que realiza download
+// TODO passar variavel
+
+// TODO validação dos campos - organizar codigo
+
+// TODO upload - codigo - ok
+
+// TODO modificar css
+-> Organização da formatação CSS
+A formatação CSS está PARCIALMENTE organizada. Apesar de ter criado o arquivo CSS,
+ainda há estilo CSS espalhado dentro do HTML, ou seja, não está aplicando boas práticas
+de desenvolvimento web.<!--  TIRAR STYLE DAS TAGS HTML -->

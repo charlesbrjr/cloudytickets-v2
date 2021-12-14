@@ -1,46 +1,41 @@
 <!-- 
     Dupla: Charles Junior e Shayane Teixeira
 -->
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site de Música</title>
-
     <!-- STYLES -->
     <link rel="stylesheet" href="assets/css/styles.css">
-
 </head>
 
 <body>
     <main>
-        <div class="header">
-            <div class="content first-content">
-                <div class="first-column">
-                    <?php include 'login.php'; ?>
+        <div style="margin-left:5%">
+            <div class="w3-container">
+                <div class="textContainer">
+                    <img class="imgTicket" src="assets/images/ticket.svg">
                 </div>
-                <form class="form" action="registrar.php" method="POST">
-                    <h1 class="formRegister">Crie sua conta</h1>
-                    <p class="description description-primary">Se conecte com o nosso grupo.</p>
-                    <label class="label-input">
-                        <input name="nome" id="nome" type="text" placeholder="Nome">
-                    </label>
-
-                    <label class="label-input">
-                        <input name="email" id="email" type="email" placeholder="E-mail">
-                    </label>
-
-                    <label class="label-input">
-                        <input name="senha" id="senha" type="password" placeholder="Senha">
-                    </label>
-                    <input type="submit" class="btn btn-second" value="Registrar" name="registrar" />
-                </form>
+                <div class="textContent">
+                    <p class="text">
+                    <h1>Objetivo do CloudyTickets</h1>
+                    <p>A Cloudy Tickets é uma plataforma de venda de ingressos das principais atrações do momento.
+                        Chega de enfrentar looongas filas de compra, do conforto da sua casa agora você pode reservar
+                        com antecedência sem se preocupar com nada até o dia do seu evento. Shows, teatros e festas -
+                        tem para todos os gostos e bolsos. Fique ligado para as novas atrações e interaja nas redes
+                        sociais com o #VouDeCloudy</p>
+                    </p>
+                    <a href="login.php">
+                        <button>Faça seu Cadastro/Login no site.</button>
+                    </a>
+                </div>
+                <br />
             </div>
+        </div>
     </main>
     <?php include 'footer.php'; ?>
 </body>
