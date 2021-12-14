@@ -1,0 +1,191 @@
+:root {
+  --bg-page: #51a9e4;
+  --bg-page-second: #dfdfdf;
+  --bg-page-bd: #f1f1f1;
+  --bg-cards: #2b7bb1e0;
+  --bg-hover-cards: #2313b4;
+
+  --color-line: #00305a;
+  --color-line-2: #022b50;
+  --color-letter: #ffffff;
+
+  --fontSizeLight: 1rem; /* 16px */
+  --fontSizeMedium: 1.12rem; /* 18px */
+  --fontSizeFooter: 1.2rem;
+  --fontSizeBold: 2.5rem; /* 18px */
+  --fontSizeStrong: 4.5rem;
+
+  --fontFamilyNormal: "Poppins", sans-serif;
+  --fontFamilyDif: "Work Sans", sans-serif;
+
+  --fontWeightLight: 400;
+  --fontWeightMedium: 600;
+  --fontWeightBold: 700;
+}
+
+/* background fundo ===================*/
+body {
+  background: var(--bg-page-bd);
+}
+
+/* SEPARAR */
+.separator {
+  height: 1px;
+  background: linear-gradient(270deg, var(--bg-page-bd), var(--color-line-2));
+  margin-bottom: 2rem;
+}
+
+/* entre em contato */
+address > a {
+  color: var(--bg-page);
+}
+
+/* SIDEBAR ===================== */
+.logo {
+  top: 11%;
+  right: 40%;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.logoEnter {
+  width: 50%;
+  height: 25rem;
+
+  position: relative;
+  transform: rotate(45deg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons {
+  width: 2.5rem; /* 40px */
+  height: 2.5rem;
+
+  margin-top: 4rem;
+}
+
+.icons:hover {
+  width: 3.5rem;
+  border-left: solid var(--bg-hover-cards);
+  border-left-width: 0.2rem;
+}
+
+#container {
+  margin-left: 2%;
+}
+
+#sidebar {
+  margin: 2%;
+}
+
+/* projetos - destaques of songs ============================== */
+main #projetos .container > h1 {
+  font-size: var(--fontSizeStrong);
+  font-family: var(--fontFamilyNormal);
+  color: var(--color-letter);
+}
+
+main #projetos {
+  padding: 6.25rem 3.5rem; /* 100px 50px */
+  text-align: center;
+  background-color: var(--bg-page);
+}
+
+main #projetos .larguraMaxContainer h2 {
+  padding-bottom: 20px;
+  color: var(--color-letter);
+  font-size: var(--fontSizeStrong);
+  font-family: var(--fontFamilyDif);
+  font-weight: var(--fontWeight);
+}
+
+main #projetos .larguraMaxContainer div {
+  margin: 1.56rem 0px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+main #projetos .larguraMaxContainer div > article {
+  height: auto;
+  flex-grow: 1;
+  flex-basis: calc(33% - 20px);
+  background: var(--bg-cards);
+  padding: 1.87rem 1.56rem; /* 30px 25px */
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px dashed #fff;
+
+  font-size: var(--fontSizeMedium);
+  font-family: var(--fontFamilyNormal);
+  font-weight: var(--fontWeight);
+}
+
+main #projetos .larguraMaxContainer div > article:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 1rem var(--bg-cards);
+}
+
+main #projetos .larguraMaxContainer div > article img {
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+main #projetos .larguraMaxContainer div > article h3 {
+  font-size: 2.4rem;
+  color: var(--color-letter);
+  font-weight: 500;
+}
+
+main #projetos .larguraMaxContainer div > article p {
+  line-height: 1.75rem; /* 28px */
+  margin-top: 1.25rem;
+  font-size: 1.6rem;
+  color: var(--color-letter);
+}
+
+main #projetos .larguraMaxContainer a {
+  font-size: 1.12rem;
+  position: relative;
+  text-decoration: none;
+  color: var(--color-letter);
+
+  font-size: var(--fontSizeLight);
+  font-family: var(--fontFamilyDif);
+  font-weight: var(--fontWeight);
+}
+
+main #projetos .larguraMaxContainer a:hover {
+  border-bottom: 2px solid var(--bg-hover-cards);
+}
+
+main #projetos .larguraMaxContainer button {
+  font-size: 2rem;
+  background: none;
+  border: none;
+}
+
+main #projetos .larguraMaxContainer .button {
+  font-size: 1.5rem;
+}
+
+main #projetos .larguraMaxContainer button:hover {
+  cursor: pointer;
+}
+
+/* FOOTER =========== */
+footer {
+  padding: 4rem;
+  text-align: center;
+
+  font-size: var(--fontSizeFooter);
+  font-family: var(--fontFamilyDif);
+  font-weight: var(--fontWeightLight);
+
+  color: var(--color-letter);
+}
