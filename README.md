@@ -25,10 +25,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O projeto CloudyTickets é baseado em um site onde o usuário pode visualizar compras de ingresso. Sendo para, show, festas ou teatro. Atrações como Lana del Rey, Camila Cabello, Imagine Dragons etc...
 
-## Visite o Site
-
-- [Clique aqui](https://shateixeira.github.io/cloudytickets-v2/)
-
 ---
 
 Feito com ♥ Charles Júnior e Shayane Teixeira
