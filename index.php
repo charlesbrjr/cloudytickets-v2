@@ -11,14 +11,17 @@
     <title>Site de Música</title>
     <!-- STYLES -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+
 </head>
 
 <body>
     <main>
-        <div style="margin-left:5%">
+        <div id="container">
             <div class="w3-container">
                 <div class="textContainer">
-                    <img class="imgTicket" src="assets/images/ticket.svg">
+                    <img class="logoEnter" src="assets/images/ticket.svg">
                 </div>
                 <div class="textContent">
                     <p class="text">

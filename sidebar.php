@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,12 +8,14 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
 </head>
 
 <body>
 
     <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block" style="width:5%">
+    <div class="w3-sidebar w3-bar-block" id="sidebar">
         <h3 class="w3-bar-item">
             <a href="home.php">
                 <img class="logo" src="../assets/images/ticket.svg" alt="logo">

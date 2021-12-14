@@ -15,6 +15,9 @@ include "header.php";
 
 
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+
 </head>
 
 <body>
@@ -22,7 +25,7 @@ include "header.php";
     <?php include '../sidebar.php'; ?>
 
     <!-- Page Content -->
-    <div style="margin-left:5%">
+    <div id="container">
         <div class="w3-container">
 
             <main>
