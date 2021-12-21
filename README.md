@@ -1,6 +1,7 @@
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-visitar-site">Visitar Site</a>
 </p>
 
 <br>
@@ -23,6 +24,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## 💻 Projeto
 
 O projeto CloudyTickets é baseado em um site onde o usuário pode visualizar compras de ingresso. Sendo para, show, festas ou teatro. Atrações como Lana del Rey, Camila Cabello, Imagine Dragons etc...
+
+## Visite o Site
+
+- [Clique aqui](https://shateixeira.github.io/cloudytickets-v2/)
 
 ---
 

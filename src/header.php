@@ -1,16 +1,10 @@
 <head>
-    <?php
-    include "../config.php";
-    session_start();
-
-    $id = (int)$_SESSION['id'];
-    $sql = "SELECT id FROM usuario WHERE id = $id";
-    $res = mysqli_query($dbOpen, $sql);
-    $aux = mysqli_fetch_array($res);
-    $nome = $aux[0];
-    ?>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> <?php echo $nome ?> </title>
+    <!-- FRAMEWORK -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- FRAMEWORK - BOOTSTRAP -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title> <?php echo $nome; ?> </title>
 </head>

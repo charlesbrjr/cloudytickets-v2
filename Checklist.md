@@ -2,3 +2,6 @@
 
 // TODO criptografia - validação dos campos
 
+// TODO arrumar css da side bar
+
+// TODO reorganizar codigo

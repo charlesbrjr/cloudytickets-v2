@@ -15,6 +15,7 @@
     <div class="container">
         <h1 class="text-center">Formulário de Upload de Arquivos</h1>
         <?php
+        session_start();
 
         if (isset($_POST['file'])) {
             $arquivo = $_FILES['arquivo'];

@@ -9,7 +9,7 @@
     <title> cloudyticket | Show da Camila Cabello</title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/global.css">
 
 </head>

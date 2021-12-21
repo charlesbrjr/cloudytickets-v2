@@ -1,33 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-include "header.php";
-?>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- FRAMEWORK -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- FRAMEWORK - BOOTSTRAP -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
+    <?php include "header.php"; ?>
     <link rel="stylesheet" href="../assets/css/styles.css">
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/global.css">
-
 </head>
 
 <body>
-
+    <!-- PHP - INCLUDE SIDEBAR -->
     <?php include '../sidebar.php'; ?>
-
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
-
             <main>
                 <!--Destaques-->
                 <section id="projetos">
@@ -80,6 +66,8 @@ include "header.php";
                             </a>
                         </div>
                     </div>
+
+                    <!-- DESTAQUES DE SHOW, FESTA E TEATRO -->
                     <div class="larguraMaxContainer">
                         <h2 class="titulo-delay">Destaques</h2>
                         <div>
@@ -138,6 +126,8 @@ include "header.php";
                                 </div>
                             </article>
                         </div>
+
+                        <!-- PHP - INLCUDE FOOTER -->
                         <?php include '../footer.php'; ?>
             </main>
 
