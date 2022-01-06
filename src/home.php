@@ -10,7 +10,7 @@
 
 <body>
     <!-- PHP - INCLUDE SIDEBAR -->
-    <?php include '../sidebar.php'; ?>
+    <?php include '../includes/sidebar.php'; ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
@@ -76,7 +76,7 @@
                                 <h3>Festa do Povo Animado</h3>
                                 <img src="../assets/images/povoanimado.jpg" alt="Foto de Festa de um Povo Animado">
                                 <div>
-                                    <a href="buyticketparty.php" target="_blank" class="button">
+                                    <a href="../events/buyticketparty.php" target="_blank" class="button">
                                         Saiba mais
                                     </a>
                                 </div>
@@ -87,7 +87,7 @@
                                 <h3>Show da Lana Del Rey</h3>
                                 <img src="../assets/images/lanadelrey.jpg" alt="Show da Lana Del Rey">
                                 <div>
-                                    <a href="buyticketshow.php" target="_blank" class="button">
+                                    <a href="../events/buyticketshow.php" target="_blank" class="button">
                                         Saiba mais
                                     </a>
                                 </div>
@@ -99,7 +99,7 @@
                                 <img src="../assets/images/houseofGucci.jpg" alt="Teatro da Casa dos Gucci">
                                 <div>
 
-                                    <a href="buyticketconcerts.php" target="_blank" class="button">
+                                    <a href="../events/buyticketconcerts.php" target="_blank" class="button">
                                         Saiba mais
                                     </a>
 
@@ -110,7 +110,7 @@
                                 <h3>Peça Memórias Póstumas de Brás Cubas</h3>
                                 <img src="../assets/images/teatro.png" alt="Foto de Festa de um Povo Animado">
                                 <div>
-                                    <a href="buyticketconcertsmemorias.php" target="_blank" class="button">
+                                    <a href="../events/buyticketconcertsmemorias.php" target="_blank" class="button">
                                         Saiba mais
                                     </a>
                                 </div>
@@ -120,7 +120,7 @@
                                 <h3>Show da Lady Gaga</h3>
                                 <img src="../assets/images/ladygaga.jpg" alt="Foto de Festa de um Povo Animado">
                                 <div>
-                                    <a href="buyticketslady.php" target="_blank" class="button">
+                                    <a href="../events/buyticketslady.php" target="_blank" class="button">
                                         Saiba mais
                                     </a>
                                 </div>
@@ -128,7 +128,7 @@
                         </div>
 
                         <!-- PHP - INLCUDE FOOTER -->
-                        <?php include '../footer.php'; ?>
+                        <?php include '../includes/footer.php'; ?>
             </main>
 
 </body>

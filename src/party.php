@@ -16,7 +16,7 @@
 
 <body>
 
-    <?php include '../sidebar.php'; ?>
+    <?php include '../includes/sidebar.php'; ?>
 
     <!-- Page Content -->
     <div id="container">
@@ -34,7 +34,7 @@
                                     <img src="../assets/images/povoanimado.jpg" alt="Foto de Festa de um Povo Animado">
                                     <div>
                                         <button>
-                                            <a href="buyticketparty.php" target="_blank" class="button">
+                                            <a href="../events/buyticketparty.php" target="_blank" class="button">
                                                 Saiba mais
                                             </a>
                                         </button>
@@ -55,7 +55,7 @@
                                 </article>
                             </div>
 
-                            <?php include '../footer.php'; ?>
+                            <?php include '../includes/footer.php'; ?>
             </main>
         </div>
     </div>

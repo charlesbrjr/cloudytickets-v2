@@ -16,7 +16,7 @@
 
 <body>
 
-    <?php include '../sidebar.php'; ?>
+    <?php include '../includes/sidebar.php'; ?>
 
     <!-- Page Content -->
     <div id="container">
@@ -47,7 +47,7 @@
                                     <img src="../assets/images/lanadelrey.jpg" alt="Show da Lana Del Rey">
                                     <div>
                                         <button>
-                                            <a href="buyticketshow.php" target="_blank" class="button">
+                                            <a href="../events/buyticketshow.php" target="_blank" class="button">
                                                 Saiba mais
                                             </a>
                                         </button>
@@ -60,7 +60,7 @@
                                     <img src="../assets/images/ladygaga.jpg" alt="Teatro da Casa dos Gucci">
                                     <div>
                                         <button>
-                                            <a href="buyticketslady.php" target="_blank" class="button">
+                                            <a href="../events/buyticketslady.php" target="_blank" class="button">
                                                 Saiba mais
                                             </a>
                                         </button>
@@ -79,7 +79,7 @@
                                 </article>
                             </div>
 
-                            <?php include '../footer.php'; ?>
+                            <?php include '../includes/footer.php'; ?>
             </main>
         </div>
     </div>

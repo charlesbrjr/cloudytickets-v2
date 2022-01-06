@@ -1,16 +1,11 @@
 <?php
 session_start();
-include '../config.php';
-include 'buyticketshow.php';
-$id_evento = $_SESSION['id_evento'];
+include '../includes/config.php';
 
-
-$lista = [];
 $sql = "SELECT usuario.nome, usuario.email, eventos.atracao 
 FROM usuario, ingresso, eventos 
 WHERE usuario.id_usuario = ingresso.FK_USUARIO_id_usuario
-AND ingresso.FK_EVENTOS_id_evento = eventos.id_evento
-AND eventos.id_evento = '$id_evento'";
+AND ingresso.FK_EVENTOS_id_evento = eventos.id_evento";
 $aux = mysqli_query($dbOpen, $sql);
 ?>
 
@@ -25,29 +20,29 @@ $aux = mysqli_query($dbOpen, $sql);
     <title> cloudyticket | Show da Lana Del Rey</title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/global.css">
 </head>
 
 <body>
-    <?php include '../sidebar.php'; ?>
+    <?php include '../includes/sidebar.php'; ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
             <div class="textContainer">
-                <label class="sr-only">Quantidade de Ingresso</label>
-                <input type="text">
+                <!--      <label class="sr-only">Quantidade de Ingresso</label>
+                <input type="text"> -->
                 <table border="1" width="100%">
                     <tr>
                         <th>NOME</th>
                         <th>EVENTO</th>
-                        <th>QUANTIDADE</th>
                         <th>AÇÕES</th>
                     </tr>
                     <?php
+                    include '../includes/config.php';
                     while ($row = mysqli_fetch_array($aux)) {
                         echo "<tr><td>" . $row['nome'] . "</td><td>" .
-                            $row['evento'] . $row['quantidade'] .
+                            $row['atracao'] .
                             "<td><a 
                         href='ticket.php'>
                         [Ver]</a> 
@@ -60,7 +55,7 @@ $aux = mysqli_query($dbOpen, $sql);
             </div>
         </div>
     </div>
-    <?php include '../footer.php'; ?>
+    <?php include '../includes/footer.php'; ?>
 </body>
 
 </html>

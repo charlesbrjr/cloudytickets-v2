@@ -16,16 +16,16 @@
 
     <!-- Sidebar -->
     <!--     <div class="sidebar">
-        <a href="../src/home.php">
+        <a href="./home.php">
             <img class="logo" src="../assets/images/ticket.svg" alt="">
         </a>
-        <a href="../src/songs.php">
+        <a href="./songs.php">
             <img class="icons" src="../assets/images/songs.svg" alt="">
         </a>
-        <a href="../src/concerts.php">
+        <a href="./concerts.php">
             <img class="icons" src="../assets/images/show.svg" alt="">
         </a>
-        <a href="../src/party.php">
+        <a href="./party.php">
             <img class="icons" src="../assets/images/party.svg" alt="">
         </a>
     </div> -->

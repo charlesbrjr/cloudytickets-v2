@@ -17,7 +17,7 @@
 <!-- uma pagina de exibição de ticket -->
 
 <body>
-    <?php include '../sidebar.php'; ?>
+    <?php include '../includes/sidebar.php'; ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <?php include '../footer.php'; ?>
+        <?php include '../includes/footer.php'; ?>
 </body>
 
 </html>
