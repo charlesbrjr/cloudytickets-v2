@@ -18,7 +18,7 @@
 
 <body>
     <!-- PHP - INCLUDE SIDEBAR -->
-    <?php include '../sidebar.php'; ?>
+    <?php include '../includes/sidebar.php'; ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
@@ -52,7 +52,7 @@
         </div>
     </div>
     <!-- PHP - INCLUDE FOOTER -->
-    <?php include '../footer.php'; ?>
+    <?php include '../includes/footer.php'; ?>
 </body>
 
 </html>

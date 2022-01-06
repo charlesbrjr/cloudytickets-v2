@@ -15,20 +15,20 @@
 <body>
 
     <!-- Sidebar -->
-    <!--     <div class="sidebar">
+    <div class="sidebar">
         <a href="./home.php">
             <img class="logo" src="../assets/images/ticket.svg" alt="">
         </a>
         <a href="./songs.php">
-            <img class="icons" src="../assets/images/songs.svg" alt="">
+            <img class="icons lineLeftBorder" src="../assets/images/songs.svg" alt="">
         </a>
         <a href="./concerts.php">
-            <img class="icons" src="../assets/images/show.svg" alt="">
+            <img class="icons lineLeftBorder" src="../assets/images/show.svg" alt="">
         </a>
         <a href="./party.php">
-            <img class="icons" src="../assets/images/party.svg" alt="">
+            <img class="icons lineLeftBorder" src="../assets/images/party.svg" alt="">
         </a>
-    </div> -->
+    </div>
 </body>
 
 </html>

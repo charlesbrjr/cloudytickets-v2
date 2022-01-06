@@ -40,11 +40,20 @@ address > a {
 }
 
 /* SIDEBAR ===================== */
+#container {
+  margin-left: 2%;
+}
+
 .logo {
-  top: 11%;
-  right: 20%;
+  width: 2.2rem;
+  top: 12%;
+  right: 8%;
   position: relative;
   transform: rotate(45deg);
+}
+
+.logo:hover {
+  width: 5rem;
 }
 
 .logoEnter {
@@ -60,40 +69,33 @@ address > a {
 }
 
 .icons {
-  width: 2.5rem; /* 40px */
-  height: 2.5rem;
+  width: 1.5rem; /* 40px */
+  height: 2rem;
 
   margin-top: 4rem;
 }
 
-.icons:hover {
-  width: 3.5rem;
+.lineLeftBorder {
   border-left: solid var(--bg-hover-cards);
   border-left-width: 0.2rem;
 }
 
-#container {
-  margin-left: 2%;
+.icons:hover {
+  height: 2.8rem;
 }
 
 /* SIDEBAR =========================*/
 .sidebar {
   height: 100%;
-  width: 80px;
+  width: 26px;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
   background: var(--bg-page-bd);
-  overflow-x: hidden;
   padding-top: 16px;
 }
 
 .sidebar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 20px;
-  color: #818181;
   display: block;
 }
 
