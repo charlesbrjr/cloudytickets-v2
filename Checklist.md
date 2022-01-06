@@ -2,6 +2,8 @@
 
 // TODO criptografia - validação dos campos
 
-// TODO arrumar css da side bar
+// TODO Página de ticket
+
+// TODO arrumar css da sidebar
 
 // TODO reorganizar codigo
