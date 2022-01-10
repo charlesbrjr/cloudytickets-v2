@@ -13,27 +13,37 @@
 
 <body>
     <div class="container">
-        <h1 class="text-center">Formulário de Upload de Arquivos</h1>
         <?php
+        include "./includes/config.php";
         session_start();
 
-        if (isset($_POST['file'])) {
-            $arquivo = $_FILES['arquivo'];
+        if (isset($_FILES['arquivo'])) {
+            $msg = false;
 
-            $arquivo = explode('.', $arquivo['name']);
+            $arquivo = strtolower(substr($_FILES['arquivo']['name'], -4));
+            $newarquivo = md5(time()) . $arquivo;
+            $dir = "uploads/";
 
-            if ($arquivo[sizeof($arquivo) - 1] != 'jpg') {
-                die("Você não pode fazer upload deste arquivo!!");
+            move_uploaded_file($_FILES['arquivo']['tmp_name'], $dir . $newarquivo);
+
+
+            $sql = "INSERT INTO arquivo(id, arquivo, data) VALUES(null, '$newarquivo', NOW());";
+            if (mysqli_query($dbOpen, $sql)) {
+                $msg = "Arquivo enviado com sucesso!!";
             } else {
-                header("Location: ./src/ticket.php");
+                $msg = "Falha ao enviar arquivo.";
+            }
+
+            //erro
+            if ($msg != false) {
+                echo "<p>$msg</p>";
             }
         }
         ?>
-
-        <form name="form" action="" method="post" enctype="multipart/form-data">
-            <input type="hidden" name="enviou" value="1">
-            Arquivo PDF:<br>
-            <input type="file" name="arquivo">
+        <h1 class="text-center">Formulário de Upload de Arquivos</h1>
+        <form name="form" action="upload.php" method="post" enctype="multipart/form-data">
+            Arquivo:<br>
+            <input type="file" required name="arquivo">
             <br><br>
             <input type="submit" class="btn btn-primary" name="file" value="Enviar">
         </form>

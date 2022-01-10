@@ -25,7 +25,7 @@
                 <h2>Ticket</h2>
                 <div class="ticketBuy">
                     <img src="../assets/images/download.svg">
-                    <a href="">Ver documento</a>
+                    <a href="../upload.php">Ver documento</a>
                     <p>Nome</p>
                     <p>Qtd de Ingresso</p>
                     <p>Evento</p>

@@ -106,8 +106,8 @@ a {
   font-weight: var(--fontWeightMedium);
 }
 
-.formRegister {
-  color: #000;
+.formRegister h2 {
+  color: var(--bg-cards);
   font-family: var(--fontFamilyDif);
   font-size: var(--fontSizeBold);
   font-weight: var(--fontWeight);
@@ -139,4 +139,21 @@ a {
 
 .carousel-caption > p {
   color: #43baca;
+}
+
+/* TICKET PAGINA ======================== */
+.textContainer {
+  font-family: var(--fontFamilyNormal);
+  font-size: var(--fontSizeMedium);
+  font-weight: var(--fontWeight);
+  background: var(--bg-page);
+
+  margin-left: 5rem;
+}
+
+.ticketBuy {
+  color: var(--color-letter);
+  padding-left: 1rem;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
 }

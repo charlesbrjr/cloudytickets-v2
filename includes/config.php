@@ -11,5 +11,7 @@ $dbOpen = mysqli_connect($host_db, $user_db, $password_db, $name_db);
 //check connection
 if (!$dbOpen) {
     die("Error de conexão." . mysqli_connect_error());
+} else {
+    $response["success"] = "conexão efetuada com sucesso";
 }
 ?>
