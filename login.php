@@ -21,7 +21,7 @@
                         <label class="label-input-login">
                             <input name="senha" id="senha" type="password" placeholder="Senha">
                         </label>
-                        <input type="submit" class="btn btn-second" value="Entrar" name="entrar" onclick="Logar()" />
+                        <input type="submit" class="btn btn-second" value="Entrar" name="entrar" />
                     </form>
                 </div>
                 <form class="form" action="register.php" method="POST">

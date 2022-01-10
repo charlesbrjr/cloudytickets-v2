@@ -1,5 +1,4 @@
-// TODO nome na página - verificação de login
+// TODO nome na página
 
 // TODO criptografia - validação dos campos
 
-// TODO reorganizar codigo
