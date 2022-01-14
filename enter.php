@@ -1,6 +1,7 @@
 <!-- LOGIN DE USUARIO -->
 <?php
-include_once "./includes/config.php";
+session_start();
+include_once "config.php";
 
 // Se a autenticação não foi enviada
 if (empty($email)) {

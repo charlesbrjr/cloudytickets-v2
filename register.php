@@ -1,55 +1,52 @@
 <?php
 /* <!-- REGISTRO DE USUARIO --> */
-include "./includes/config.php";
-
-$registro = $_POST['registrar'];
-
-// adicionar usuarios
-if ($registro == "Registrar") {
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $senha = hash('md5', $_POST['senha']);
-    mysqli_query($dbOpen, "INSERT INTO usuario(nome, email, senha) VALUES('$nome', '$email', $senha)");
-    mysqli_close($dbOpen);
-    header("Location: ./src/home.php");
-} else {
-    header("Location: login.php");
-}
-
-/* -----------VALIDADOR---------------- */
-/* 
+session_start();
+include "config.php";
+echo "register";
+$registro = $_POST['Registrar'];
 $entrar = filter_input(INPUT_POST, 'entrar', FILTER_SANITIZE_URL);
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 $senha = filter_input(INPUT_POST, 'senha', FILTER_VALIDATE_INT);
 
+/* -----------VALIDADOR---------------- */
 if ($entrar) {
     $erro = 0;
 
-    //Verifica se o campo email e valido
+    //Verifica se o campo email é valido
     $email = $_POST["email"];
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        echo "E-mail inválido.";
-    } else {
+    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
         echo "Seu e-mail é " . $email;
-        echo $erro = 1;
-    }
+        echo $erro = 0;
 
-    //Verifica se o campo nome não está em branco.
-    $nome = $_POST["nome"];
-    if (empty($nome) or trim($nome, '') == false) {
-        echo ("Favor digitar seu nome");
-        echo $erro = 1;
-    }
+        //Verifica se o campo nome não está em branco.
+        $nome = $_POST["nome"];
+        if (!empty($nome)) {
 
-    //Verifica se o campo nome não está em branco.
-    $senha = $_POST["senha"];
-    if ($senha) {
-        $senha = $_POST['senha'];
-        if ($senha == "") {
-            $mensagem = "<span class='aviso'><b>Aviso</b>: Senha não foi alterada!</span>";
+            //Verifica se o campo senha não está em branco.
+            $senha = $_POST['senha'];
+            if (!empty($senha)) {
+                // adiciona usuarios ao banco de dados 
+                if ($registro == "Registrar") {
+                    $nome = $_POST['nome'];
+                    $email = $_POST['email'];
+                    $senha = hash('md5', $_POST['senha']);
+                    mysqli_query($dbOpen, "INSERT INTO usuario(nome, email, senha) VALUES('$nome', '$email', $senha)");
+                    mysqli_close($dbOpen);
+                    header("Location: ./src/home.php");
+                } else {
+                    header("Location: login.php");
+                }
+            } else {
+                echo ("Digite a senha");
+                echo $erro = 1;
+            }
+        } else {
+            echo ("Favor digitar seu nome");
+            echo $erro = 1;
         }
-        echo "<p id='mensagem'>" . $mensagem . "</p>";
+    } else {
+        echo "E-mail inválido.";
     }
 
     if ($erro == 0) {
@@ -59,4 +56,3 @@ if ($entrar) {
     $_SESSION['msg'] = "Página não encontrada";
     header("Location: login.php");
 }
- */
