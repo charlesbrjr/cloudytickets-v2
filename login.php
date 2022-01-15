@@ -19,7 +19,7 @@
                             <input name="email" id="email" type="email" placeholder="E-mail">
                         </label>
                         <label class="label-input-login">
-                            <input name="senha" id="senha" type="password" placeholder="Senha">
+                            <input name="senha" max="8" id="senha" type="password" placeholder="Senha">
                         </label>
                         <input type="submit" class="btn btn-second" value="Entrar" name="entrar" />
                     </form>
@@ -34,7 +34,7 @@
                         <input name="email" id="email" type="email" placeholder="E-mail">
                     </label>
                     <label class="label-input">
-                        <input name="senha" id="senha" type="password" placeholder="Senha">
+                        <input name="senha" id="senha" max="8" type="password" placeholder="Senha">
                     </label>
                     <input type="submit" class="btn btn-second" value="Registrar" name="registrar" />
                 </form>

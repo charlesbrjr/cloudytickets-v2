@@ -14,7 +14,7 @@
 <body>
     <div class="container">
         <?php
-        include "./includes/config.php";
+        include "config.php";
         session_start();
 
         if (isset($_FILES['arquivo'])) {
@@ -27,7 +27,7 @@
             move_uploaded_file($_FILES['arquivo']['tmp_name'], $dir . $newarquivo);
 
 
-            $sql = "INSERT INTO arquivo(id, arquivo, data) VALUES(null, '$newarquivo', NOW());";
+            $sql = "INSERT INTO usuario(arquivo) VALUES('$newarquivo');";
             if (mysqli_query($dbOpen, $sql)) {
                 $msg = "Arquivo enviado com sucesso!!";
             } else {

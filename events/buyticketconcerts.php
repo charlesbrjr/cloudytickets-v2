@@ -38,10 +38,10 @@
                 </p>
                 <label>Quantidade de Ingressos</label>
                 <input type="number" name="qtdticket" min="0">
-                <a href="ticket.php">
+                <a href="../src/ticket.php">
                     <button>Comprar Ingressos</button>
                 </a>
-                <a href="search.php">
+                <a href="../src/search.php">
                     <button>Ingressos vendidos</button>
                 </a>
                 <a href="../upload.php">
