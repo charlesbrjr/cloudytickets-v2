@@ -2,8 +2,9 @@
 <?php
 session_start();
 include_once "config.php";
+$email = $_POST['email'];
 
-// Se a autenticação não foi enviada
+/* // Se a autenticação não foi enviada
 if (empty($email)) {
     $response["success"] = 0;
     $response["error"] = "faltam parametros";
@@ -26,32 +27,15 @@ else {
         $response["success"] = 0;
         $response["error"] = "email ou senha não confere";
     }
-}
+} */
 
+$query = mysqli_query($dbOpen, "SELECT id_usuario FROM usuario WHERE email=$email");
+$result = mysqli_fetch_array($query);
+$id = $result[0];
+echo $id;
+$_SESSION['id'] = $id;
 
-/* -----------senha criptografada---------------- */
-/* if ((!empty($email)) && (!empty($senha))) {
-    //Gerar a senha criptografa
-    echo md5($senha, PASSWORD_DEFAULT);
-    //Pesquisar o usuário no BD
-    $result_usuario = "SELECT id, nome, email, senha FROM usuario WHERE email='$email' LIMIT 1";
-    $resultado_usuario = mysqli_query($dbOpen, $result_usuario);
-    if ($resultado_usuario) {
-        $row_usuario = mysqli_fetch_assoc($resultado_usuario);
-        if (md5($senha, $row_usuario['senha'])) {
-            $_POST['id'] = $row_usuario['id'];
-            $_POST['nome'] = $row_usuario['nome'];
-            $_POST['email'] = $row_usuario['email'];
-            $_POST['senha'] = $row_usuario['senha'];
-        } else {
-            $_SESSION['msg'] = "Login e senha incorreto!";
-            header("Location: login.php");
-        }
-    }
-} else {
-    $_SESSION['msg'] = "Login e senha incorreto!";
-    header("Location: login.php");
-}
-*/
-mysqli_close($bdOpen);
+mysqli_close($dbOpen);
+/* header("Location: ./src/home.php"); */
+/* chamar a tela home */
 ?>

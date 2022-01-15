@@ -36,7 +36,7 @@
                     <label class="label-input">
                         <input name="senha" id="senha" max="8" type="password" placeholder="Senha">
                     </label>
-                    <input type="submit" class="btn btn-second" value="Registrar" name="registrar" />
+                    <input type="submit" class="btn btn-second" value="Registrar" name="Registrar" />
                 </form>
             </div>
         </div>

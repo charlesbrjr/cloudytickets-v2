@@ -2,7 +2,6 @@
 /* <!-- REGISTRO DE USUARIO --> */
 session_start();
 include "config.php";
-echo "register";
 $registro = $_POST['Registrar'];
 $entrar = filter_input(INPUT_POST, 'entrar', FILTER_SANITIZE_URL);
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
@@ -10,30 +9,36 @@ $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 $senha = filter_input(INPUT_POST, 'senha', FILTER_VALIDATE_INT);
 
 /* -----------VALIDADOR---------------- */
-if ($entrar) {
+if (true) {
     $erro = 0;
 
     //Verifica se o campo email é valido
-    $email = $_POST["email"];
-    if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    $email = $_POST['email'];
+    if (true) { /* FILTER_VALIDATE_EMAIL */
         echo "Seu e-mail é " . $email;
-        echo $erro = 0;
+        /* echo $erro = 0; */
 
         //Verifica se o campo nome não está em branco.
-        $nome = $_POST["nome"];
+        $nome = $_POST['nome'];
         if (!empty($nome)) {
 
             //Verifica se o campo senha não está em branco.
             $senha = $_POST['senha'];
             if (!empty($senha)) {
                 // adiciona usuarios ao banco de dados 
-                if ($registro == "Registrar") {
+                if (true) {
                     $nome = $_POST['nome'];
                     $email = $_POST['email'];
                     $senha = hash('md5', $_POST['senha']);
                     mysqli_query($dbOpen, "INSERT INTO usuario(nome, email, senha) VALUES('$nome', '$email', $senha)");
+
+                    $query = mysqli_query($dbOpen, "SELECT id_usuario FROM usuario WHERE email='$email'");
+                    $result = mysqli_fetch_array($query);
+                    $id = $result[0];
+                    $_SESSION['id'] = $id;
+
                     mysqli_close($dbOpen);
-                    header("Location: ./src/home.php");
+                    /* header("Location: ./src/home.php"); */
                 } else {
                     header("Location: login.php");
                 }

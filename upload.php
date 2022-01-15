@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uploads</title>
-
-    <!-- CDN Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -40,11 +40,12 @@
             }
         }
         ?>
+        <!-- adicionar css -->
         <form name="form" action="upload.php" method="post" enctype="multipart/form-data">
             Arquivo:<br>
             <input type="file" required name="arquivo">
             <br><br>
-            <input type="submit" class="btn btn-primary" name="file" value="Enviar">
+            <input type="submit" class="btn btn-submit" name="file" value="Enviar">
         </form>
     </div>
 </body>

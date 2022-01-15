@@ -24,11 +24,21 @@
             <div class="textContainer">
                 <h2>Ticket</h2>
                 <div class="ticketBuy">
-                    <img src="../assets/images/download.svg">
+                    <img src="../assets/images/download.svg" alt="Imagem de Download">
                     <a href="../upload.php">Ver documento</a>
-                    <p>Nome</p>
-                    <p>Qtd de Ingresso</p>
-                    <p>Evento</p>
+                    <?php
+                    include '../config.php';
+                    $nome = $_POST['nome'];
+                    $sql = "SELECT nome FROM usuario WHERE id_usuario='$id'";
+                    $aux = mysqli_query($dbOpen, $sql);
+                    ?>
+                    <p>Quantidade de Ingresso: {1}</p>
+                    <?php
+                    include '../config.php';
+                    $atracao = $_POST['atracao'];
+                    $sql = "SELECT atracao FROM eventos WHERE atracao='$atracao'";
+                    $aux = mysqli_query($dbOpen, $sql);
+                    ?>
                 </div>
             </div>
         </div>

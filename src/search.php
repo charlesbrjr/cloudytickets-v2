@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../includes/config.php';
+include '../config.php';
 
 $sql = "SELECT usuario.nome, usuario.email, eventos.atracao 
 FROM usuario, ingresso, eventos 
@@ -30,8 +30,6 @@ $aux = mysqli_query($dbOpen, $sql);
     <div id="container">
         <div class="w3-container">
             <div class="textContainer">
-                <!--      <label class="sr-only">Quantidade de Ingresso</label>
-                <input type="text"> -->
                 <table border="1" width="100%">
                     <tr>
                         <th>NOME</th>
@@ -39,7 +37,7 @@ $aux = mysqli_query($dbOpen, $sql);
                         <th>AÇÕES</th>
                     </tr>
                     <?php
-                    include '../includes/config.php';
+                    include '../config.php';
                     while ($row = mysqli_fetch_array($aux)) {
                         echo "<tr><td>" . $row['nome'] . "</td><td>" .
                             $row['atracao'] .
