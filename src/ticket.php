@@ -9,36 +9,32 @@
     <title> cloudyticket </title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/global.css">
 
 </head>
 
-<!-- uma pagina de exibição de ticket -->
-
 <body>
-    <?php include '../includes/sidebar.php'; ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
             <div class="textContainer">
                 <h2>Ticket</h2>
                 <div class="ticketBuy">
-                    <img src="../assets/images/download.svg" alt="Imagem de Download">
-                    <a href="../upload.php">Ver documento</a>
+                    <a href="../upload.php">
+                        <img src="../assets/images/download.svg" alt="Imagem de Download">
+                    </a>
                     <?php
                     include '../config.php';
-                    $nome = $_POST['nome'];
-                    $sql = "SELECT nome FROM usuario WHERE id_usuario='$id'";
+                    session_start();
+                    $id  = $_SESSION['id'];
+                    $sql = "SELECT nome FROM usuario WHERE id_usuario = '$id'";
                     $aux = mysqli_query($dbOpen, $sql);
+                    $id_evento = $_SESSION['id_evento'];
+                    echo $id_evento;
+                    echo "<br />";
+                    echo $id;
+                    mysqli_close($dbOpen);
                     ?>
-                    <p>Quantidade de Ingresso: {1}</p>
-                    <?php
-                    include '../config.php';
-                    $atracao = $_POST['atracao'];
-                    $sql = "SELECT atracao FROM eventos WHERE atracao='$atracao'";
-                    $aux = mysqli_query($dbOpen, $sql);
-                    ?>
+                    <p>Quantidade de Ingresso: (1)</p>
                 </div>
             </div>
         </div>

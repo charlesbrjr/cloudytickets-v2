@@ -9,16 +9,16 @@
     <title> cloudyticket</title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/global.css">
     <link rel="stylesheet" href="../assets/css/buytickets.css">
-
-
+    <link rel="stylesheet" href="../assets/css/global.css">
 </head>
 
 <body>
     <!-- PHP - INCLUDE SIDEBAR -->
-    <?php include '../includes/sidebar.php'; ?>
+    <?php include '../sidebar.php';
+    session_start();
+    $_SESSION['id_evento'] = 2;
+    ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">

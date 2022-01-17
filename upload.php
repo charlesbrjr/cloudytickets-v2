@@ -26,7 +26,6 @@
 
             move_uploaded_file($_FILES['arquivo']['tmp_name'], $dir . $newarquivo);
 
-
             $sql = "INSERT INTO usuario(arquivo) VALUES('$newarquivo');";
             if (mysqli_query($dbOpen, $sql)) {
                 $msg = "Arquivo enviado com sucesso!!";

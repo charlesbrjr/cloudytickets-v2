@@ -9,14 +9,13 @@
     <title> cloudyticket</title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/buytickets.css">
     <link rel="stylesheet" href="../assets/css/global.css">
-
 </head>
 
 <body>
+    <?php include '../sidebar.php'; ?>
 
-    <?php include '../includes/sidebar.php'; ?>
 
     <!-- Page Content -->
     <div id="container">

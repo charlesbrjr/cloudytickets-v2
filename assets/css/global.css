@@ -9,9 +9,9 @@
   --color-line-2: #022b50;
   --color-letter: #ffffff;
 
-  --fontSizeLight: 1rem; /* 16px */
-  --fontSizeMedium: 1.12rem; /* 18px */
-  --fontSizeBold: 2.5rem; /* 18px */
+  --fontSizeLight: 1rem;
+  --fontSizeMedium: 1.12rem;
+  --fontSizeBold: 2.5rem;
   --fontSizeStrong: 4.5rem;
 
   --fontFamilyNormal: "Poppins", sans-serif;
@@ -37,23 +37,6 @@ body {
 /* entre em contato */
 address > a {
   color: var(--bg-page);
-}
-
-/* SIDEBAR ===================== */
-#container {
-  margin-left: 2%;
-}
-
-.logo {
-  width: 2.2rem;
-  top: 12%;
-  right: 8%;
-  position: relative;
-  transform: rotate(45deg);
-}
-
-.logo:hover {
-  width: 5rem;
 }
 
 .logoEnter {
@@ -84,32 +67,49 @@ address > a {
   height: 2.8rem;
 }
 
-/* SIDEBAR =========================*/
-.sidebar {
-  height: 100%;
-  width: 26px;
-  position: fixed;
-  background: var(--bg-page-bd);
-  padding-top: 16px;
+.anexo {
+  color: #51a9e4;
 }
 
-.sidebar a {
-  padding: 6px 8px 6px 16px;
+/* navbar ======================== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  text-align: center;
+  display: inline;
+  float: right;
+
+  font-size: var(--fontSizeLight);
+  color: var(--color-letter);
+  font-family: var(--fontFamilyNormal);
+
+  margin: 0.4rem;
+  padding: 0.6rem;
+}
+
+nav ul li a {
+  transition: 0.2s;
+  position: relative;
   text-decoration: none;
-  display: block;
 }
 
-.sidebar a:hover {
-  color: #f1f1f1;
+nav .logo {
+  top: 30%;
+  left: 5%;
+  position: relative;
+  transform: rotate(70deg);
 }
 
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
+nav img {
+  width: 50%;
+  top: 40%;
+  left: 100%;
+  position: relative;
 }
-
-/* @media screen and (max-height: 450px) {
-} */
 
 /* projetos - destaques of songs ============================== */
 main #projetos .container > h1 {
@@ -206,16 +206,4 @@ main #projetos .larguraMaxContainer .button {
 
 main #projetos .larguraMaxContainer button:hover {
   cursor: pointer;
-}
-
-/* FOOTER =========== */
-footer {
-  padding: 4rem;
-  text-align: center;
-
-  font-size: var(--fontSizeLight);
-  font-family: var(--fontFamilyDif);
-  font-weight: var(--fontWeightLight);
-
-  color: #000;
 }

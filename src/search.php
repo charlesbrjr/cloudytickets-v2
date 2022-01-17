@@ -20,12 +20,9 @@ $aux = mysqli_query($dbOpen, $sql);
     <title> cloudyticket | Show da Lana Del Rey</title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/global.css">
 </head>
 
 <body>
-    <?php include '../includes/sidebar.php'; ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">

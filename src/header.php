@@ -11,11 +11,11 @@
     include "../config.php";
     session_start();
 
-    $id = (int)$_SESSION['id'];
+    $id = $_SESSION['id'];
     $sql = "SELECT nome FROM usuario WHERE id_usuario = $id"; /* $id */
     $query = mysqli_query($dbOpen, $sql);
-    $result = mysqli_fetch_array($query);
-    $nome = $result[0];
+    $row = mysqli_fetch_array($query);
+    $nome = $row[0];
     ?>
     <title> <?php echo $nome; ?> </title>
 </head>

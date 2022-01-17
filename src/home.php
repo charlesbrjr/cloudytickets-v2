@@ -2,16 +2,14 @@
 <html lang="en">
 
 <head>
-    <?php include "header.php";?>
+    <?php include "header.php"; ?>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/buytickets.css">
 </head>
 
 <body>
-    <!-- PHP - INCLUDE SIDEBAR -->
-    <?php include '../includes/sidebar.php'; ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
@@ -19,8 +17,11 @@
                 <!--Destaques-->
                 <section id="projetos">
                     <div class="container">
-                        <h1>Cloudy Tickets</h1>
+                        <!-- PHP - INCLUDE SIDEBAR -->
+                        <?php include '../sidebar.php'; ?>
                         <div class="separator"></div>
+                        <h1>Cloudy Tickets</h1>
+                        <!--  <div class="separator"></div> -->
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                             <!-- Indicators -->
                             <ol class="carousel-indicators">
@@ -123,6 +124,15 @@
                                 <div>
                                     <a href="../events/buyticketslady.php" target="_blank" class="button">
                                         Saiba mais
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="cards-interval">
+                                <h3>Show da Lady Gaga</h3>
+                                <img src="../assets/images/titok.jpg" alt="Festa do Tiktok">
+                                <div>
+                                    <a href="home.php" target="_blank" class="button">
+                                        Em breve
                                     </a>
                                 </div>
                             </article>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 14-Dez-2021 às 20:40
+-- Tempo de geração: 17-Jan-2022 às 22:24
 -- Versão do servidor: 10.4.17-MariaDB
 -- versão do PHP: 7.4.13
 
@@ -38,7 +38,8 @@ CREATE TABLE `eventos` (
 --
 
 INSERT INTO `eventos` (`id_evento`, `atracao`, `qtd_ingresso`) VALUES
-(1, 'Show da Lana Del Rey', 40);
+(1, 'Show da Lana Del Rey', 40),
+(2, 'Festa do Povo Animado', 100);
 
 -- --------------------------------------------------------
 
@@ -57,7 +58,8 @@ CREATE TABLE `ingresso` (
 --
 
 INSERT INTO `ingresso` (`id_ingresso`, `FK_EVENTOS_id_evento`, `FK_USUARIO_id_usuario`) VALUES
-(1, 1, 3);
+(1, 1, 3),
+(2, 2, 35);
 
 -- --------------------------------------------------------
 
@@ -69,36 +71,24 @@ CREATE TABLE `usuario` (
   `id_usuario` int(11) NOT NULL,
   `nome` varchar(100) DEFAULT NULL,
   `email` varchar(100) DEFAULT NULL,
-  `senha` varchar(120) DEFAULT NULL
+  `senha` varchar(120) NOT NULL,
+  `arquivo` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Extraindo dados da tabela `usuario`
 --
 
-INSERT INTO `usuario` (`id_usuario`, `nome`, `email`, `senha`) VALUES
-(1, 'Amanda', 'amanda@gmail.com', '23456'),
-(2, 'Raissa', 'raissacn@gmail.com', '23542'),
-(3, 'Charles', 'charles@hotmail.com', '34567'),
-(4, 'shayane ', 'shayane@gmail.com', '12345'),
-(5, 'jose', 'jose@gmail.com', '78906'),
-(6, 'Gabriel', 'gabriel@hotmail.com.br', '45678'),
-(7, 'Pedro', 'pedro@yahoo.com', '567432'),
-(8, 'Bruno', 'bruno@gmail.com', '23451'),
-(9, 'Flavia', 'flavia@gmail.com', '876301232'),
-(10, 'Alessandra', 'ale@gmail.com', '7463905034'),
-(11, 'Emanuel', 'emanuel@hotmail.com', '3258203489'),
-(12, 'Jose', 'jose@hotmail.com', '634756754674567'),
-(13, 'pedro', 'pedro@hotmail.com', '3242354235'),
-(14, 'Ian', 'ian@hotmail.com', '23452345234'),
-(15, 'paulo', 'paulovc@gmail.com', '98740957'),
-(16, 'matheus', 'mateus@gmail.com', '876543'),
-(17, 'Caio ', 'caio@hotmail.com', '23876594823'),
-(18, 'George', 'george@hotmail.com', '6245647546'),
-(19, 'Rodrigo', 'ogitdornyc@gmail.com', '24253254'),
-(20, 'João Victor', 'joaovictor@gmail.com', '4352645739856348754'),
-(21, 'Felipe', 'fla@gmail.com', '2352345423'),
-(22, 'Lucas Barbosa', 'lubquinhas@gmail.com', '264236543');
+/* ESSES INSERTS ESTÃO SEM SENHA PQ SÃO CRIPTOGRAFADAS */
+INSERT INTO `usuario` (`id_usuario`, `nome`, `email`, `senha`, `arquivo`) VALUES
+(3, 'Charles', 'charles@hotmail.com', '-', ''),
+(35, 'Sergio', 'sergio@gmail.com', '-', ''),
+(38, 'Vanusa', 'vanusa@gmail.com', '-', ''),
+(40, 'Maria', 'maria@gmail.com', '-', ''),
+(41, 'teste', 'teste@gmail.com', '-', ''),
+(42, 'teste2', 'teste2@gmail.com', '-', ''),
+(43, 'teste3', 'teste3@gmail.com', '-', ''),
+(44, 'Shayane ', 'shayaneteixeira@gmail.com', '-', '');
 
 --
 -- Índices para tabelas despejadas
@@ -132,19 +122,19 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `eventos`
 --
 ALTER TABLE `eventos`
-  MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT de tabela `ingresso`
 --
 ALTER TABLE `ingresso`
-  MODIFY `id_ingresso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_ingresso` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- Restrições para despejos de tabelas
