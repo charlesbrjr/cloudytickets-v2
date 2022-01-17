@@ -12,7 +12,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![HTML](https://img.shields.io/badge/-HTML-FFDAB9?style=for-the-badge&logo=HTML5&logoColor=html)&nbsp;
 ![CSS](https://img.shields.io/badge/-CSS-87CEEB?style=for-the-badge&logo=CSS3&logoColor=css)&nbsp;
 ![PHP](https://img.shields.io/badge/-PHP-DDA0DD?style=for-the-badge&logo=PHP&logoColor=php)&nbsp;
-![SQL](https://img.shields.io/badge/-SQL-D8BFD8?style=for-the-badge&logo=SQL&logoColor=sql)
+![SQL](https://img.shields.io/badge/-SQL-D8BFD8?style=for-the-badge&logo=mySQL&logoColor=sql)
 
 # Bibliotecas
 
