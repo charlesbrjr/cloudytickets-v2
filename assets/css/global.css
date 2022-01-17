@@ -1,3 +1,23 @@
+/* IMPORT GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Work+Sans:wght@400;500;700&display=swap");
+
+/* reet of page ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-cards);
+  border-radius: 4px;
+}
+
 :root {
   --bg-page: #51a9e4;
   --bg-page-second: #dfdfdf;
