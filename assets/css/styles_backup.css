@@ -1,0 +1,260 @@
+/* CADASTRO INICIAL =================== */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: var(--bg-page-second);
+}
+
+.content {
+  background: var(--color-letter);
+  border-radius: 0.95rem; /* 15px */
+  width: 60rem; /* 960px */
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  background: var(--bg-cards);
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 0.95rem;
+  border-bottom-left-radius: 0.95rem;
+
+  left: 0;
+}
+
+.title {
+  font-size: var(--fontSizeBold);
+  font-weight: var(--fontWeightMedium);
+  font-family: var(--fontFamilyNormal);
+  text-transform: capitalize;
+}
+
+.title-primary,
+.description-primary {
+  color: var(--bg-cards);
+}
+
+.btn {
+  border-radius: 0.95rem;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 3.15rem; /* 10px 50px */
+  cursor: pointer;
+  font-weight: bold;
+  width: 9.3rem; /* 150px */
+  align-self: center;
+  border: none;
+  margin-top: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-letter);
+}
+
+.btn-primary {
+  background: transparent;
+  border: 1px solid #fff;
+  transition: 0.5s;
+}
+
+.btn-second {
+  background: var(--bg-cards);
+  transition: 0.5s;
+}
+
+.first-content {
+  display: flex;
+}
+
+.first-content .second-column {
+  z-index: 10;
+}
+
+.first-column {
+  text-align: center;
+  width: 50%;
+  z-index: 10;
+}
+
+.second-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+}
+
+.form > h1 {
+  color: var(--color-letter);
+  font-family: var(--fontFamilyDif);
+  font-size: var(--fontSizeBold);
+  font-weight: var(--fontWeight);
+}
+
+.formRegister > h2 {
+  color: var(--bg-cards);
+  font-family: var(--fontFamilyDif);
+  font-size: var(--fontSizeBold);
+  font-weight: var(--fontWeightLight);
+}
+
+.form input {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-left: 5rem;
+}
+
+.label-input {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
+}
+
+/* CARROSEL ========================== */
+.carousel-caption > h3 {
+  color: var(--color-letter);
+}
+
+.carousel-caption > p {
+  color: #43baca;
+}
+
+/* TICKET PAGINA ======================== */
+.textContainer {
+  font-family: var(--fontFamilyNormal);
+  font-size: var(--fontSizeMedium);
+  font-weight: var(--fontWeight);
+  background: var(--bg-page);
+
+  margin-left: 5rem;
+}
+
+.ticketBuy {
+  color: var(--color-letter);
+  padding-left: 1rem;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* ANEXAR DOCUMENTO */
+/* form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} */
+
+.btn .btn-submit {
+  color: black;
+}
+
+/* BUT TICKET */
+.ticketBuy {
+  background-color: #fff;
+}
+/* CONTEUDO ============================ */
+.textContainer {
+  height: 30rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  color: var(--color-letter);
+  background: var(--bg-page);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContent {
+  margin: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: var(--fontFamilyDif);
+}
+
+p {
+  font-size: 1.5rem;
+  font-family: var(--fontFamilyDif);
+}
+
+.price {
+  font-size: 1rem;
+  font-family: var(--fontFamilyNormal);
+}
+
+.imgTicket {
+  width: 50%;
+  height: 25rem;
+  font-size: 1rem;
+
+  border-radius: 5px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="number"] {
+  width: 4rem;
+  outline: none;
+}
+
+button {
+  border: none;
+  background: none;
+  padding: 0.25rem;
+  font-family: var(--fontFamilyNormal);
+  font-size: var(--fontSizeMedium);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+button:hover {
+  color: var(--bg-page);
+  transition: 2s;
+}
+
+.document {
+  color: #000;
+}
+
+/* FOOTER =========== */
+footer {
+  padding: 4rem;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: var(--fontSizeLight);
+  font-family: var(--fontFamilyNormal);
+  font-weight: var(--fontWeightLight);
+
+  color: #000;
+}

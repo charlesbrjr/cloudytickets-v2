@@ -18,10 +18,25 @@ $_SESSION['id_evento'] = 1;
 </head>
 
 <body>
-    <?php include '../sidebar.php'; ?>
+    <?php
+    include '../config.php';
+    session_start();
+    $_SESSION['id_evento'] = 1;
+    $id_evento = $_SESSION['id_evento'];
+    $query = mysqli_query($dbOpen, "SELECT qtd_ingresso FROM eventos WHERE id_evento=$id_evento");
+    $row = mysqli_fetch_array($query);
+    $qtd_ingresso = $row[0];
+
+    $query = mysqli_query($dbOpen, "SELECT * FROM ingresso WHERE FK_EVENTOS_id_evento=$id_evento");
+    $vendidos = mysqli_num_rows($query);
+    echo "Ingressos restantes: ", $qtd_ingresso-$vendidos;
+    //calculo da quantidade de ingressos restantes
+    ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
+            <!-- PHP - INCLUDE SIDEBAR -->
+            <?php include '../includes/iconHome.php'; ?>
             <div class="textContainer">
                 <img class="imgTicket" src="../assets/images/lanadelrey.jpg">
             </div>

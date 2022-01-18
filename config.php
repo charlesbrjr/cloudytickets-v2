@@ -1,6 +1,6 @@
 <!-- configuração do banco de dados -->
 <?php
-$name_db = 'cloudyticket';
+$name_db = 'ticketcloudy';
 $host_db = 'localhost';
 $user_db = 'root';
 $password_db = '';

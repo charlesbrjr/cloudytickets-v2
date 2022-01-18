@@ -14,16 +14,17 @@
 </head>
 
 <body>
-    <?php include '../sidebar.php'; ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
+            <!-- PHP - INCLUDE SIDEBAR -->
+            <?php include '../includes/iconHome.php'; ?>
             <div class="textContainer">
                 <img class="imgTicket" src="../assets/images/houseofGucci.jpg">
             </div>
             <div class="textContent">
                 <p class="text">
-                <h1>Teatro House of Gucci</h1>w
+                <h1>Teatro House of Gucci</h1>
                 House of Gucci é a encenação da história de Patrizia Reggiani,
                 ex-mulher de Maurizio Gucci, membro da família fundadora da
                 marca italiana Gucci. Patrizia conspirou para matar o marido
@@ -35,8 +36,23 @@
                 <p>25 de novembro</p>
                 <p class="price">R$35,00</p>
                 </p>
-                <label>Quantidade de Ingressos</label>
-                <input type="number" name="qtdticket" min="0">
+                <label>
+                    <input type="number" name="qtdticket" min="0">
+                    <?php
+                    include '../config.php';
+                    session_start();
+                    $_SESSION['id_evento'] = 3;
+                    $id_evento = $_SESSION['id_evento'];
+                    $query = mysqli_query($dbOpen, "SELECT qtd_ingresso FROM eventos WHERE id_evento=$id_evento");
+                    $row = mysqli_fetch_array($query);
+                    $qtd_ingresso = $row[0];
+
+                    $query = mysqli_query($dbOpen, "SELECT * FROM ingresso WHERE FK_EVENTOS_id_evento=$id_evento");
+                    $vendidos = mysqli_num_rows($query);
+                    echo "Ingressos restantes: ", $qtd_ingresso - $vendidos;
+                    //calculo da quantidade de ingressos restantes
+                    ?>
+                </label>
                 <a href="../src/ticket.php">
                     <button>Comprar Ingressos</button>
                 </a>

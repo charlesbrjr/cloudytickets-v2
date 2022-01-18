@@ -18,7 +18,7 @@
                 <section id="projetos">
                     <div class="container">
                         <!-- PHP - INCLUDE SIDEBAR -->
-                        <?php include '../sidebar.php'; ?>
+                        <?php include '../includes/sidebar.php'; ?>
                         <div class="separator"></div>
                         <h1>Cloudy Tickets</h1>
                         <!--  <div class="separator"></div> -->

@@ -1,4 +1,3 @@
-
 /* CADASTRO INICIAL =================== */
 .header {
   display: flex;
@@ -247,6 +246,10 @@ button:hover {
 /* FOOTER =========== */
 footer {
   padding: 4rem;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
   text-align: center;
 
   font-size: var(--fontSizeLight);

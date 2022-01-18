@@ -16,22 +16,29 @@
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
+            <!-- PHP - INCLUDE SIDEBAR -->
+            <?php include '../includes/iconHome.php'; ?>
             <div class="textContainer">
                 <h2>Ticket</h2>
                 <div class="ticketBuy">
                     <a href="../upload.php">
                         <img src="../assets/images/download.svg" alt="Imagem de Download">
                     </a>
+                    <br />
                     <?php
                     include '../config.php';
                     session_start();
                     $id  = $_SESSION['id'];
-                    $sql = "SELECT nome FROM usuario WHERE id_usuario = '$id'";
-                    $aux = mysqli_query($dbOpen, $sql);
+                    $query = mysqli_query($dbOpen, "SELECT nome FROM usuario WHERE id_usuario = '$id'");
+                    $row = mysqli_fetch_array($query);
+                    $nome = $row[0];
                     $id_evento = $_SESSION['id_evento'];
-                    echo $id_evento;
+                    $query = mysqli_query($dbOpen, "SELECT atracao FROM eventos WHERE id_evento = '$id_evento'");
+                    $row = mysqli_fetch_array($query);
+                    $atracao = $row[0];
+                    echo "Evento: " . $atracao;
                     echo "<br />";
-                    echo $id;
+                    echo "Usuário: " . $nome;
                     mysqli_close($dbOpen);
                     ?>
                     <p>Quantidade de Ingresso: (1)</p>

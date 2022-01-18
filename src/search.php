@@ -2,10 +2,12 @@
 session_start();
 include '../config.php';
 
+$id_evento = $_SESSION['id_evento'];
 $sql = "SELECT usuario.nome, usuario.email, eventos.atracao 
 FROM usuario, ingresso, eventos 
 WHERE usuario.id_usuario = ingresso.FK_USUARIO_id_usuario
-AND ingresso.FK_EVENTOS_id_evento = eventos.id_evento";
+AND ingresso.FK_EVENTOS_id_evento = eventos.id_evento
+AND id_evento = $id_evento";
 $aux = mysqli_query($dbOpen, $sql);
 ?>
 
@@ -26,6 +28,8 @@ $aux = mysqli_query($dbOpen, $sql);
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
+            <!-- PHP - INCLUDE SIDEBAR -->
+            <?php include '../includes/iconHome.php'; ?>
             <div class="textContainer">
                 <table border="1" width="100%">
                     <tr>

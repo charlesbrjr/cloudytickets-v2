@@ -21,6 +21,8 @@
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
+            <!-- PHP - INCLUDE SIDEBAR -->
+            <?php include '../includes/iconHome.php'; ?>
             <main>
                 <!--Destaques-->
                 <section id="projetos">
