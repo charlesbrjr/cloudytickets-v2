@@ -15,7 +15,7 @@
     <header id="header">
         <nav class="container">
             <a href="../src/home.php">
-                <img class="logo" src="../assets/images/ticket.svg">
+                <img class="logoIconHome" src="../assets/images/ticket.svg">
             </a>
         </nav>
     </header>

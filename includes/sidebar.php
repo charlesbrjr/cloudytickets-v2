@@ -19,6 +19,11 @@
             </a>
             <div class="menu">
                 <ul>
+                    <li>
+                        <a href="../User.php">
+                            <img src="../assets/images/edit.svg" />
+                        </a>
+                    </li>
                     <li class="active">
                         <a href="./songs.php">
                             <img src="../assets/images/songs.svg" />

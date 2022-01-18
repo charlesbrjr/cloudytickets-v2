@@ -71,7 +71,6 @@
 
                     <!-- DESTAQUES DE SHOW, FESTA E TEATRO -->
                     <div class="larguraMaxContainer">
-                        <h2 class="titulo-delay">Destaques</h2>
                         <div>
                             <!-- Festa do Povo Animado -->
                             <article class="cards-interval">

@@ -54,7 +54,7 @@
                     ?>
                 </label>
                 <a href="../src/ticket.php">
-                    <button>Comprar Ingressos</button>
+                    <button>Comprar 1 ingresso</button>
                 </a>
                 <a href="../src/search.php">
                     <button>Ingressos vendidos</button>

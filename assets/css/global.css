@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
   --bg-page: #51a9e4;
   --bg-page-second: #dfdfdf;
@@ -40,42 +39,18 @@ body {
 
 /* SEPARAR */
 .separator {
-  height: 1px;
-  background: linear-gradient(270deg, var(--bg-page-bd), var(--color-line-2));
+  height: 0.4rem;
+  background: linear-gradient(
+    to left,
+    var(--bg-page-bd),
+    var(--bg-page-second)
+  );
   margin-bottom: 2rem;
 }
 
 /* entre em contato */
 address > a {
   color: var(--bg-page);
-}
-
-.logoEnter {
-  width: 50%;
-  height: 25rem;
-
-  position: relative;
-  transform: rotate(45deg);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.icons {
-  width: 1.5rem; /* 40px */
-  height: 2rem;
-
-  margin-top: 4rem;
-}
-
-.lineLeftBorder {
-  border-left: solid var(--bg-hover-cards);
-  border-left-width: 0.2rem;
-}
-
-.icons:hover {
-  height: 2.8rem;
 }
 
 .anexo {
@@ -109,16 +84,36 @@ nav ul li a {
 }
 
 nav .logo {
-  top: 30%;
-  left: 5%;
+  width: 100%;
+  top: 50%;
+  left: -200%;
   position: relative;
-  transform: rotate(70deg);
+  transform: rotate(40deg);
+}
+
+.logoIconHome {
+  width: 100%;
+  top: 50%;
+  left: 30%;
+  margin-top: 1.5rem;
+  position: relative;
+  transform: rotate(40deg);
+}
+
+.buttonCancelarEdit {
+  text-transform: uppercase;
+  color: var(--color-line-2);
+  font-size: 2rem;
+}
+.buttonCancelarEdit:hover {
+  text-decoration: none;
+  color: var(--bg-cards);
 }
 
 nav img {
-  width: 50%;
-  top: 40%;
-  left: 100%;
+  width: 70%;
+  top: 50%;
+  left: 180%;
   position: relative;
 }
 
@@ -130,7 +125,10 @@ main #projetos .container > h1 {
 }
 
 main #projetos {
-  padding: 6.25rem 3.5rem; /* 100px 50px */
+  border-radius: 2rem;
+  padding: 6.25rem 3.5rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2rem;
   text-align: center;
   background-color: var(--bg-page);
 }
@@ -158,8 +156,8 @@ main #projetos .larguraMaxContainer div > article {
   background: var(--bg-cards);
   padding: 1.87rem 1.56rem; /* 30px 25px */
   margin: 10px;
-  border-radius: 5px;
-  border: 1px dashed #fff;
+  border-radius: 10px;
+  border: 1px solid #fff;
 
   font-size: var(--fontSizeMedium);
   font-family: var(--fontFamilyNormal);

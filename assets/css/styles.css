@@ -22,11 +22,10 @@
   content: "";
   position: absolute;
   background: var(--bg-cards);
-  width: 40%;
-  height: 100%;
-  border-top-left-radius: 0.95rem;
-  border-bottom-left-radius: 0.95rem;
-
+  width: 45%;
+  height: 80%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   left: 0;
 }
 
@@ -41,24 +40,22 @@
 .description-primary {
   color: var(--bg-cards);
 }
+/* 
+a {
+  text-decoration: none;
+  color: var(--color-letter);
+} */
 
 .btn {
   border-radius: 0.95rem;
   text-transform: uppercase;
   color: #fff;
-  font-size: 10px;
-  padding: 10px 3.15rem; /* 10px 50px */
-  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 1rem 3rem;
   font-weight: bold;
-  width: 9.3rem; /* 150px */
-  align-self: center;
-  border: none;
-  margin-top: 1rem;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-letter);
+  width: 9rem;
+  border: 1px solid var(--bg-hover-cards);
+  margin: 1rem;
 }
 
 .btn-primary {
@@ -68,8 +65,13 @@ a {
 }
 
 .btn-second {
+  justify-content: center;
   background: var(--bg-cards);
-  transition: 0.5s;
+}
+.btn-second:hover {
+  color: var(--bg-page-bd);
+  background: var(--bg-page);
+  transition: 2s;
 }
 
 .first-content {
@@ -97,13 +99,20 @@ a {
   display: flex;
   flex-direction: column;
   width: 55%;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 
 .form > h1 {
+  margin-left: 1rem;
+  justify-content: center;
+  align-items: center;
   color: var(--color-letter);
   font-family: var(--fontFamilyDif);
   font-size: var(--fontSizeBold);
-  font-weight: var(--fontWeight);
+  font-weight: var(--fontWeightLight);
 }
 
 .formRegister > h2 {
@@ -124,7 +133,16 @@ a {
 .label-input {
   display: flex;
   align-items: center;
-  margin: 0.5rem;
+  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+label {
+  max-width: 100%;
+  margin-bottom: 0.8rem;
+  font-weight: var(--fontWeightBold);
 }
 
 /* CARROSEL ========================== */
@@ -136,16 +154,12 @@ a {
   color: #43baca;
 }
 
-/* TICKET PAGINA ======================== */
-.textContainer {
-  font-family: var(--fontFamilyNormal);
-  font-size: var(--fontSizeMedium);
-  font-weight: var(--fontWeight);
-  background: var(--bg-page);
-
-  margin-left: 5rem;
+.carousel-inner > .item > img {
+  width: 500px;
+  height: 580px;
 }
 
+/* TICKET PAGINA ======================== */
 .ticketBuy {
   color: var(--color-letter);
   padding-left: 1rem;
@@ -174,8 +188,13 @@ a {
   height: 30rem;
   margin: 1rem;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 2rem;
+
   color: var(--color-letter);
+  background: var(--bg-page);
+  font-family: var(--fontFamilyNormal);
+  font-size: var(--fontSizeMedium);
+  font-weight: var(--fontWeight);
   background: var(--bg-page);
 
   display: flex;
@@ -183,17 +202,27 @@ a {
   justify-content: center;
 }
 
-.textContent {
-  margin: 1rem;
+.logoEnter {
+  width: 50%;
+  height: 50vh;
+
+  position: relative;
+  transform: rotate(45deg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-h1 {
+.textContent > h1 {
+  margin: 1rem;
   font-size: 2rem;
   font-family: var(--fontFamilyDif);
 }
 
-p {
-  font-size: 1.5rem;
+.textContent > p {
+  margin: 1.4rem;
+  font-size: 1.4rem;
   font-family: var(--fontFamilyDif);
 }
 
@@ -222,16 +251,13 @@ input[type="number"] {
 }
 
 button {
-  border: none;
-  background: none;
-  padding: 0.25rem;
-  font-family: var(--fontFamilyNormal);
-  font-size: var(--fontSizeMedium);
+  padding: 0.5rem;
+  margin: 1.4rem;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  border: 1px solid var(--bg-cards);
+  background: var(--bg-page-bd);
+  font-family: var(--fontFamilyDif);
+  font-size: var(--fontSizeMedium);
 }
 
 button:hover {
@@ -245,16 +271,18 @@ button:hover {
 
 /* FOOTER =========== */
 footer {
-  padding: 4rem;
-
-  display: flex;
-  text-align: center;
-  align-items: center;
-  text-align: center;
+  padding: 3rem;
 
   font-size: var(--fontSizeLight);
   font-family: var(--fontFamilyNormal);
   font-weight: var(--fontWeightLight);
-
   color: #000;
+
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }

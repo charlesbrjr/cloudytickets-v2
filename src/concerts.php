@@ -9,7 +9,6 @@
     <title> cloudyticket</title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <link rel="stylesheet" href="../assets/css/buytickets.css">
     <link rel="stylesheet" href="../assets/css/global.css">
 
 </head>

@@ -1,8 +1,8 @@
-
 /* BUT TICKET */
 .ticketBuy {
   background-color: #fff;
 }
+
 /* CONTEUDO ============================ */
 .textContainer {
   height: 30rem;
@@ -21,14 +21,17 @@
   margin: 1rem;
 }
 
-h1,
-p {
+h1 {
   font-size: 2rem;
   font-family: var(--fontFamilyDif);
 }
 
+label {
+  font-family: var(--fontFamilyDif);
+}
+
 .price {
-  font-size: 1rem;
+  font-size: 2rem;
   font-family: var(--fontFamilyNormal);
 }
 
