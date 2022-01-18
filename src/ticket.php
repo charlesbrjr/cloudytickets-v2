@@ -16,8 +16,6 @@
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
-            <!-- PHP - INCLUDE SIDEBAR -->
-            <?php include '../includes/iconHome.php'; ?>
             <div class="textContainer">
                 <h2>Ticket</h2>
                 <div class="ticketBuy">

@@ -28,8 +28,6 @@ $aux = mysqli_query($dbOpen, $sql);
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
-            <!-- PHP - INCLUDE SIDEBAR -->
-            <?php include '../includes/iconHome.php'; ?>
             <div class="textContainer">
                 <table border="1" width="100%">
                     <tr>

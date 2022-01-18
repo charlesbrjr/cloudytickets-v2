@@ -14,9 +14,6 @@
 </head>
 
 <body>
-    <?php include '../sidebar.php'; ?>
-
-
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
