@@ -14,11 +14,13 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![PHP](https://img.shields.io/badge/-PHP-DDA0DD?style=for-the-badge&logo=PHP&logoColor=php)&nbsp;
 ![SQL](https://img.shields.io/badge/-SQL-D8BFD8?style=for-the-badge&logo=mySQL&logoColor=sql)
 
-# Bibliotecas
+### Bibliotecas
 
 - Google Fonts
 - Icons8
 - Upload de arquivos
+
+### Criptografia: MD5
 
 ## 💻 Projeto
 
