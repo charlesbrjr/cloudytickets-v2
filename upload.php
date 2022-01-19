@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Uploads</title>
     <!-- STYLES -->
-    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/buytickets.css">
 </head>
 
 <body>
@@ -41,13 +42,14 @@
         }
         ?>
         <!-- adicionar css -->
-        <form name="form" action="upload.php" method="post" enctype="multipart/form-data">
-            Arquivo:<br>
-            <input type="file" required name="arquivo">
-            <br><br>
-            <input type="submit" class="btn btn-submit" name="file" value="Enviar">
-        </form>
-    </div>
+        <div class="textContainer">
+            <form name="form" action="upload.php" method="post" enctype="multipart/form-data">
+                Arquivo:<br>
+                <input type="file" name="arquivo" required>
+                <br><br>
+                <input type="submit" class="btn btn-second" name="file" value="Enviar">
+            </form>
+        </div>
 </body>
 
 </html>

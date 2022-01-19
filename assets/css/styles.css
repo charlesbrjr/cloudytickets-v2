@@ -40,11 +40,6 @@
 .description-primary {
   color: var(--bg-cards);
 }
-/* 
-a {
-  text-decoration: none;
-  color: var(--color-letter);
-} */
 
 .btn {
   border-radius: 0.95rem;
@@ -145,6 +140,17 @@ label {
   font-weight: var(--fontWeightBold);
 }
 
+/* TICKET PAGINA */
+.download {
+  width: 100%;
+  height: 5vh;
+}
+
+h2 {
+  margin-left: 4rem;
+  font-size: 3rem;
+}
+
 /* CARROSEL ========================== */
 .carousel-caption > h3 {
   color: var(--color-letter);
@@ -159,30 +165,6 @@ label {
   height: 580px;
 }
 
-/* TICKET PAGINA ======================== */
-.ticketBuy {
-  color: var(--color-letter);
-  padding-left: 1rem;
-  padding-top: 1rem;
-  margin-top: 0.5rem;
-}
-
-/* ANEXAR DOCUMENTO */
-/* form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-} */
-
-.btn .btn-submit {
-  color: black;
-}
-
-/* BUT TICKET */
-.ticketBuy {
-  background-color: #fff;
-}
 /* CONTEUDO ============================ */
 .textContainer {
   height: 30rem;
@@ -224,49 +206,6 @@ label {
   margin: 1.4rem;
   font-size: 1.4rem;
   font-family: var(--fontFamilyDif);
-}
-
-.price {
-  font-size: 1rem;
-  font-family: var(--fontFamilyNormal);
-}
-
-.imgTicket {
-  width: 50%;
-  height: 25rem;
-  font-size: 1rem;
-
-  border-radius: 5px;
-
-  position: relative;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-input[type="number"] {
-  width: 4rem;
-  outline: none;
-}
-
-button {
-  padding: 0.5rem;
-  margin: 1.4rem;
-
-  border: 1px solid var(--bg-cards);
-  background: var(--bg-page-bd);
-  font-family: var(--fontFamilyDif);
-  font-size: var(--fontSizeMedium);
-}
-
-button:hover {
-  color: var(--bg-page);
-  transition: 2s;
-}
-
-.document {
-  color: #000;
 }
 
 /* FOOTER =========== */

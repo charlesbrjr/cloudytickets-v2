@@ -37,7 +37,6 @@
                 <p class="price">R$35,00</p>
                 </p>
                 <label>
-                    <input type="number" name="qtdticket" min="0">
                     <?php
                     include '../config.php';
                     session_start();
@@ -52,6 +51,7 @@
                     echo "Ingressos restantes: ", $qtd_ingresso - $vendidos;
                     //calculo da quantidade de ingressos restantes
                     ?>
+                    <input type="number" name="qtdticket" min="0">
                 </label>
                 <a href="../src/ticket.php">
                     <button>Comprar 1 ingresso</button>
@@ -60,7 +60,7 @@
                     <button>Ingressos vendidos</button>
                 </a>
                 <a href="../upload.php">
-                    <button class="document">[Anexar Documento]</button>
+                    <button>Anexar Documento</button>
                 </a>
                 <address>
                     <a href="mailto:learningitprogramming@gmail.com">Entre em contato</a>

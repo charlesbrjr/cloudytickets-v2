@@ -1,8 +1,7 @@
 <?php
 /* <!-- REGISTRO DE USUARIO --> */
 session_start();
-include "config.php";
-$registro = $_POST['Registrar'];
+
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);

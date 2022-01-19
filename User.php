@@ -23,6 +23,7 @@
     $nome = $row[1];
     $email = $row[2];
     $senha = $row[3];
+
     ?>
     <main>
         <div class="header">
@@ -30,18 +31,19 @@
                 <h2 class="formRegister">Edite seus dados</h2>
                 <p class="description description-primary">Atualize suas principais informações aqui.</p>
                 <label class="label-input">
-                    <input name="nome" id="nome" type="text" placeholder="Nome" value="<?php echo $nome; ?>" required>
+                    <input name="novoNome" id="novoNome" type="text" placeholder="Novo nome" value="<?php echo $nome; ?>" required>
                 </label>
                 <label class="label-input">
-                    <input name="email" id="email" type="email" placeholder="E-mail" value="<?php echo $email; ?>" required>
+                    <input name="novoEmail" id="novoEmail" type="email" placeholder="Novo e-mail" value="<?php echo $email; ?>" required>
                 </label>
                 <label class="label-input">
-                    <input name="senha" id="senha" type="password" placeholder="Senha" value="<?php echo $senha; ?>" required>
+                    <input name="novaSenha" id="novaSenha" type="password" placeholder="Nova senha" value="<?php echo $senha; ?>" required>
                 </label>
                 <input type="submit" class="btn btn-second" value="Editar" name="Editar" />
+            </form>
+            <form class="form" action="delete.php" method="POST">
                 <input type="submit" class="btn btn-danger" value="Deletar conta" name="deletarConta" />
             </form>
-
         </div>
     </main>
 </body>

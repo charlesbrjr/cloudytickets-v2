@@ -15,7 +15,9 @@ else {
 
     if (mysqli_num_rows($query) > 0) {
         $row = mysqli_fetch_array($query);
-        if (hash('md5', $senha) == $row['senha']) {
+        /*    echo hash('md5', $senha); */
+        if (hash('md5', $senha) == $row[0]) {
+            /* echo "if 2"; */
             $response["success"] = 1;
             $query = mysqli_query($dbOpen, "SELECT id_usuario FROM usuario WHERE email='$email'");
             $row = mysqli_fetch_array($query);
@@ -25,13 +27,13 @@ else {
             header("Location: ./src/home.php");
         } else {
             //senha ou usuario nao confere
-            $response["success"] = 0;
-            $response["error"] = "email ou senha não confere";
+            echo "<script type='text/javascript'>alert('Senha ou usuário não conferem!');</script>";
+            echo "<script>javascript:window.location='login.php';</script>";
         }
     } else {
         // senha ou usuario nao confere
-        $response["success"] = 0;
-        $response["error"] = "email ou senha não confere";
+        echo "<script type='text/javascript'>alert('Senha ou usuário não conferem!');</script>";
+        echo "<script>javascript:window.location='login.php';</script>";
     }
 }
 ?>

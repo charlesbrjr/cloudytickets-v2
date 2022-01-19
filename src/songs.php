@@ -25,19 +25,6 @@
                         <h1>Show</h1>
                         <div class="larguraMaxContainer">
                             <div>
-                                <!-- Festa do Povo Animado -->
-                                <article class="cards-interval">
-                                    <h3>Show da Camila Cabello</h3>
-                                    <img src="../assets/images/camilacabello.jpg" alt="Foto de Festa de um Povo Animado">
-                                    <div>
-                                        <button>
-                                            <a href="home.php" target="_blank" class="button">
-                                                Em breve
-                                            </a>
-                                        </button>
-                                    </div>
-                                </article>
-
                                 <!-- Lana Del Rey -->
                                 <article class="cards-interval">
                                     <h3>Show da Lana Del Rey</h3>

@@ -1,20 +1,8 @@
-/* BUT TICKET */
-.ticketBuy {
-  background-color: #fff;
-}
-
 /* CONTEUDO ============================ */
-.textContainer {
-  height: 30rem;
-  margin: 1rem;
-  padding: 1rem;
-  border-radius: 5px;
+.ticketBuy {
   color: var(--color-letter);
-  background: var(--bg-page);
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 1rem;
+  margin: 0.5rem;
 }
 
 .textContent {
@@ -30,6 +18,7 @@ label {
   font-family: var(--fontFamilyDif);
 }
 
+/*  img + preco do buytickets */
 .price {
   font-size: 2rem;
   font-family: var(--fontFamilyNormal);
@@ -49,13 +38,15 @@ label {
   justify-content: center;
 }
 
+/* INPUT  */
 input[type="number"] {
   width: 4rem;
   outline: none;
 }
 
+/* button */
 button {
-  border: none;
+  border: 1px solid var(--bg-hover-cards);
   background: none;
   padding: 0.25rem;
   font-family: var(--fontFamilyNormal);
@@ -65,8 +56,4 @@ button {
 button:hover {
   color: var(--bg-page);
   transition: 2s;
-}
-
-.document {
-  color: #000;
 }

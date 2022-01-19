@@ -14,20 +14,6 @@
 </head>
 
 <body>
-    <?php
-    include '../config.php';
-    session_start();
-    $_SESSION['id_evento'] = 4;
-    $id_evento = $_SESSION['id_evento'];
-    $query = mysqli_query($dbOpen, "SELECT qtd_ingresso FROM eventos WHERE id_evento=$id_evento");
-    $row = mysqli_fetch_array($query);
-    $qtd_ingresso = $row[0];
-
-    $query = mysqli_query($dbOpen, "SELECT * FROM ingresso WHERE FK_EVENTOS_id_evento=$id_evento");
-    $vendidos = mysqli_num_rows($query);
-    echo "Ingressos restantes: ", $qtd_ingresso-$vendidos;
-    //calculo da quantidade de ingressos restantes
-    ?>
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
@@ -48,15 +34,32 @@
                 <p>15 de janeiro</p>
                 <p class="price">R$30,00</p>
                 </p>
-                <label>Quantidade de Ingressos</label>
-                <input type="number" name="qtdticket" min="0">
+                <label>
+                    <?php
+                    include '../config.php';
+                    session_start();
+                    $_SESSION['id_evento'] = 4;
+                    $id_evento = $_SESSION['id_evento'];
+                    $query = mysqli_query($dbOpen, "SELECT qtd_ingresso FROM eventos WHERE id_evento=$id_evento");
+                    $row = mysqli_fetch_array($query);
+                    $qtd_ingresso = $row[0];
+
+                    $query = mysqli_query($dbOpen, "SELECT * FROM ingresso WHERE FK_EVENTOS_id_evento=$id_evento");
+                    $vendidos = mysqli_num_rows($query);
+                    echo "Ingressos restantes: ", $qtd_ingresso - $vendidos;
+                    //calculo da quantidade de ingressos restantes
+                    ?>
+                    <input type="number" name="qtdticket" min="0">
+                </label>
                 <a href="../src/ticket.php">
                     <button>Comprar 1 ingresso</button>
                 </a>
                 <a href="../src/search.php">
                     <button>Ingressos vendidos</button>
                 </a>
-                <a class="anexo" href="../upload.php">[Anexar Documento]</a>
+                <a href="../upload.php">
+                    <button>Anexar Documento</button>
+                </a>
                 <address>
                     <a href="mailto:learningitprogramming@gmail.com">Entre em contato</a>
                 </address>

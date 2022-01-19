@@ -33,17 +33,18 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img src="../assets/images/camilacabello.jpg" alt="camila cabello" style="width:100%;">
+                                    <img src="../assets/images/imagedragons.jpg" alt="camila cabello" style="width:100%;">
                                     <div class="carousel-caption">
-                                        <h3>Camila Cabello</h3>
-                                        <p>LA é sempre muito divertido!</p>
+                                        <h3>Imagine Dragons</h3>
+                                        <p>Próximo show em SP!</p>
                                     </div>
                                 </div>
 
+
                                 <div class="item">
-                                    <img src="../assets/images/imagedragons.jpg" alt="imagine dragons" style="width:100%;">
+                                    <img src="../assets/images/dark.jpg" alt="camila cabello" style="width:100%;">
                                     <div class="carousel-caption">
-                                        <h3>Imagine Dragons</h3>
+                                        <h3>Sem cantor confirmado!</h3>
                                         <p>Próximo show em SP!</p>
                                     </div>
                                 </div>

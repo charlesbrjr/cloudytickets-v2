@@ -9,6 +9,8 @@
     <title> cloudyticket </title>
 
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/buytickets.css">
 
 </head>
 
@@ -16,12 +18,9 @@
     <!-- Page Content -->
     <div id="container">
         <div class="w3-container">
+            <h2>Ticket</h2>
             <div class="textContainer">
-                <h2>Ticket</h2>
                 <div class="ticketBuy">
-                    <a href="../upload.php">
-                        <img src="../assets/images/download.svg" alt="Imagem de Download">
-                    </a>
                     <br />
                     <?php
                     include '../config.php';
@@ -40,6 +39,9 @@
                     mysqli_close($dbOpen);
                     ?>
                     <p>Quantidade de Ingresso: (1)</p>
+                    <a href="../upload.php">
+                        <img class="download" src="../assets/images/download.svg" alt="Imagem de Download">
+                    </a>
                 </div>
             </div>
         </div>

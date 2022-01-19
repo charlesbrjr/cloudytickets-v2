@@ -53,10 +53,6 @@ address > a {
   color: var(--bg-page);
 }
 
-.anexo {
-  color: #51a9e4;
-}
-
 /* navbar ======================== */
 nav {
   display: flex;
