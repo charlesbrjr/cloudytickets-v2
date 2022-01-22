@@ -14,15 +14,17 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ![PHP](https://img.shields.io/badge/-PHP-DDA0DD?style=for-the-badge&logo=PHP&logoColor=php)&nbsp;
 ![SQL](https://img.shields.io/badge/-SQL-D8BFD8?style=for-the-badge&logo=mySQL&logoColor=sql)
 
-# Bibliotecas
+### Bibliotecas
 
 - Google Fonts
 - Icons8
 - Upload de arquivos
 
+### Criptografia: MD5
+
 ## 💻 Projeto
 
-O projeto CloudyTickets é baseado em um site onde o usuário pode visualizar compras de ingresso. Sendo para, show, festas ou teatro. Atrações como Lana del Rey, Camila Cabello, Imagine Dragons etc...
+O projeto CloudyTickets é baseado em um site onde o usuário pode visualizar compras de ingresso. Sendo para, show, festas ou teatro. Atrações como Lana del Rey, Lady Gaga, Imagine Dragons etc...
 
 ---
 
