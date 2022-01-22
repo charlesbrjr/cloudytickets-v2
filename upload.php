@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    
     <div class="container">
         <?php
         include "config.php";
@@ -41,6 +42,8 @@
             }
         }
         ?>
+
+        
         <!-- adicionar css -->
         <div class="textContainer">
             <form name="form" action="upload.php" method="post" enctype="multipart/form-data">
