@@ -30,7 +30,7 @@
                     $row = mysqli_fetch_array($query);
                     $nome = $row[0];
                     $id_evento = $_SESSION['id_evento'];
-                    $query = mysqli_query($dbOpen, "SELECT atracao FROM eventos WHERE id_evento = '$id_evento'");
+                    $query = mysqli_query($dbOpen, "SELECT atracao FROM evento WHERE id_evento = '$id_evento'");
                     $row = mysqli_fetch_array($query);
                     $atracao = $row[0];
                     echo "Evento: " . $atracao;
@@ -38,7 +38,8 @@
                     echo "Usuário: " . $nome;
                     mysqli_close($dbOpen);
                     ?>
-                    <p>Quantidade de Ingresso: (1)</p>
+                    <p>Quantidade de Ingresso: 1</p>
+                    <p>A compra só é confirmada quando houver o envio do documento para confirmar a sua identidade</p>
                     <a href="../upload.php">
                         <img class="download" src="../assets/images/download.svg" alt="Imagem de Download">
                     </a>

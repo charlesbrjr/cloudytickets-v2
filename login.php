@@ -39,7 +39,7 @@
                         <input name="email" id="email" type="email" placeholder="E-mail" required>
                     </label>
                     <label class="label-input">
-                        <input name="senha" id="senha" type="password" placeholder="Senha" required>
+                        <input autocomplete="new-password" name="senha" id="senha" type="password" placeholder="Senha" required>
                     </label>
                     <input type="submit" class="btn btn-second" value="Registrar" name="Registrar" />
                 </form>

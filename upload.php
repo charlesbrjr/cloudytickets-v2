@@ -28,10 +28,12 @@
 
             move_uploaded_file($_FILES['arquivo']['tmp_name'], $dir . $newarquivo);
             $id  = $_SESSION['id'];
+            $id_evento = $_SESSION['id_evento'];
             $sql = "UPDATE usuario SET arquivo = '$newarquivo' WHERE id_usuario=$id";
             if (mysqli_query($dbOpen, $sql)) {
+                $sql = mysqli_query($dbOpen, "INSERT INTO ingresso(FK_USUARIO_id_usuario, FK_evento_id_evento) VALUES($id, $id_evento)");
                 echo "<script type='text/javascript'>alert('Arquivo enviado com sucesso!!');</script>";
-                echo "<script>javascript:window.location='./src/ticket.php';</script>";
+                echo "<script>javascript:window.location='./src/home.php';</script>";
             } else {
                 $msg = "Falha ao enviar arquivo.";
             }

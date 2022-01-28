@@ -24,20 +24,20 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `eventos`
+-- Estrutura da tabela `evento`
 --
 
-CREATE TABLE `eventos` (
+CREATE TABLE `evento` (
   `id_evento` int(11) NOT NULL,
   `atracao` varchar(50) DEFAULT NULL,
   `qtd_ingresso` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Extraindo dados da tabela `eventos`
+-- Extraindo dados da tabela `evento`
 --
 
-INSERT INTO `eventos` (`id_evento`, `atracao`, `qtd_ingresso`) VALUES
+INSERT INTO `evento` (`id_evento`, `atracao`, `qtd_ingresso`) VALUES
 (1, 'Show da Lana Del Rey', 250),
 (2, 'Festa do Povo Animado', 100),
 (3, 'Teatro House of Gucci', 200),
@@ -52,7 +52,7 @@ INSERT INTO `eventos` (`id_evento`, `atracao`, `qtd_ingresso`) VALUES
 
 CREATE TABLE `ingresso` (
   `id_ingresso` int(11) NOT NULL,
-  `FK_EVENTOS_id_evento` int(11) DEFAULT NULL,
+  `FK_EVENTO_id_evento` int(11) DEFAULT NULL,
   `FK_USUARIO_id_usuario` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -60,7 +60,7 @@ CREATE TABLE `ingresso` (
 -- Extraindo dados da tabela `ingresso`
 --
 
-INSERT INTO `ingresso` (`id_ingresso`, `FK_EVENTOS_id_evento`, `FK_USUARIO_id_usuario`) VALUES
+INSERT INTO `ingresso` (`id_ingresso`, `FK_EVENTO_id_evento`, `FK_USUARIO_id_usuario`) VALUES
 (1, 1, 1),
 (2, 2, 5);
 
@@ -95,9 +95,9 @@ INSERT INTO `usuario` (`id_usuario`, `nome`, `email`, `senha`, `arquivo`) VALUES
 --
 
 --
--- Índices para tabela `eventos`
+-- Índices para tabela `evento`
 --
-ALTER TABLE `eventos`
+ALTER TABLE `evento`
   ADD PRIMARY KEY (`id_evento`);
 
 --
@@ -105,7 +105,7 @@ ALTER TABLE `eventos`
 --
 ALTER TABLE `ingresso`
   ADD PRIMARY KEY (`id_ingresso`),
-  ADD KEY `FK_EVENTOS_id_evento` (`FK_EVENTOS_id_evento`),
+  ADD KEY `FK_EVENTO_id_evento` (`FK_EVENTO_id_evento`),
   ADD KEY `FK_USUARIO_id_usuario` (`FK_USUARIO_id_usuario`);
 
 --
@@ -119,9 +119,9 @@ ALTER TABLE `usuario`
 --
 
 --
--- AUTO_INCREMENT de tabela `eventos`
+-- AUTO_INCREMENT de tabela `evento`
 --
-ALTER TABLE `eventos`
+ALTER TABLE `evento`
   MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
@@ -144,7 +144,7 @@ ALTER TABLE `usuario`
 -- Limitadores para a tabela `ingresso`
 --
 ALTER TABLE `ingresso`
-  ADD CONSTRAINT `ingresso_ibfk_1` FOREIGN KEY (`FK_EVENTOS_id_evento`) REFERENCES `eventos` (`id_evento`),
+  ADD CONSTRAINT `ingresso_ibfk_1` FOREIGN KEY (`FK_EVENTO_id_evento`) REFERENCES `evento` (`id_evento`),
   ADD CONSTRAINT `ingresso_ibfk_2` FOREIGN KEY (`FK_USUARIO_id_usuario`) REFERENCES `usuario` (`id_usuario`);
 COMMIT;
 

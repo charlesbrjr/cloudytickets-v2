@@ -29,7 +29,6 @@
                             <ol class="carousel-indicators">
                                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                                 <li data-target="#myCarousel" data-slide-to="1"></li>
-                                <li data-target="#myCarousel" data-slide-to="2"></li>
                             </ol>
 
                             <!-- Wrapper for slides -->
@@ -38,15 +37,6 @@
                                     <img src="../assets/images/imagedragons.jpg" alt="camila cabello" style="width:100%;">
                                     <div class="carousel-caption">
                                         <h3>Imagine Dragons</h3>
-                                        <p>Próximo show em SP!</p>
-                                    </div>
-                                </div>
-
-
-                                <div class="item">
-                                    <img src="../assets/images/dark.jpg" alt="camila cabello" style="width:100%;">
-                                    <div class="carousel-caption">
-                                        <h3>Sem cantor confirmado!</h3>
                                         <p>Próximo show em SP!</p>
                                     </div>
                                 </div>
@@ -130,10 +120,10 @@
                                 </div>
                             </article>
                             <article class="cards-interval">
-                                <h3>Show da Lady Gaga</h3>
+                                <h3>Festa do TikTok</h3>
                                 <img src="../assets/images/titok.jpg" alt="Festa do Tiktok">
                                 <div>
-                                    <a href="home.php" target="_blank" class="button">
+                                    <a target="_blank" class="button">
                                         Em breve
                                     </a>
                                 </div>

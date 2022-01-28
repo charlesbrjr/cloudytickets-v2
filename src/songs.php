@@ -54,7 +54,7 @@
                                     <img src="../assets/images/imagedragons.jpg" alt="Teatro da Casa dos Gucci">
                                     <div>
                                         <button>
-                                            <a href="home.php" target="_blank" class="button">
+                                            <a target="_blank" class="button">
                                                 Em breve
                                             </a>
                                         </button>

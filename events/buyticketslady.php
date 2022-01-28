@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <?php include "../src/header.php"; ?>    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,22 +36,21 @@
                 <label>
                     <?php
                     include '../config.php';
-                    session_start();
                     $_SESSION['id_evento'] = 5;
                     $id_evento = $_SESSION['id_evento'];
-                    $query = mysqli_query($dbOpen, "SELECT qtd_ingresso FROM eventos WHERE id_evento=$id_evento");
+                    $query = mysqli_query($dbOpen, "SELECT qtd_ingresso FROM evento WHERE id_evento=$id_evento");
                     $row = mysqli_fetch_array($query);
                     $qtd_ingresso = $row[0];
 
-                    $query = mysqli_query($dbOpen, "SELECT * FROM ingresso WHERE FK_EVENTOS_id_evento=$id_evento");
+                    $query = mysqli_query($dbOpen, "SELECT * FROM ingresso WHERE FK_EVENTO_id_evento=$id_evento");
                     $vendidos = mysqli_num_rows($query);
-                    echo "Ingressos restantes: ", $qtd_ingresso - $vendidos;
+                    $restante = $qtd_ingresso - $vendidos;
+                    echo "Ingressos restantes: ", $restante;
                     //calculo da quantidade de ingressos restantes
                     ?>
-                    <input type="number" name="qtdticket" min="0">
                 </label>
                 <a href="../src/ticket.php">
-                    <button>Comprar 1 ingresso</button>
+                    <button>Comprar ingresso</button>
                 </a>
                 <a href="../src/search.php">
                     <button>Ingressos vendidos</button>

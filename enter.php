@@ -1,4 +1,5 @@
 <!-- LOGIN DE USUARIO -->
+<meta charset="UTF-8">
 <?php
 session_start();
 include_once "config.php";

@@ -3,10 +3,10 @@ session_start();
 include '../config.php';
 
 $id_evento = $_SESSION['id_evento'];
-$sql = "SELECT usuario.nome, usuario.email, eventos.atracao 
-FROM usuario, ingresso, eventos 
+$sql = "SELECT usuario.nome, usuario.email, evento.atracao 
+FROM usuario, ingresso, evento 
 WHERE usuario.id_usuario = ingresso.FK_USUARIO_id_usuario
-AND ingresso.FK_EVENTOS_id_evento = eventos.id_evento
+AND ingresso.FK_EVENTO_id_evento = evento.id_evento
 AND id_evento = $id_evento";
 $aux = mysqli_query($dbOpen, $sql);
 ?>

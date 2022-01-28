@@ -20,7 +20,7 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="../User.php">
+                        <a href="./User.php">
                             <img src="../assets/images/edit.svg" />
                         </a>
                     </li>
@@ -29,12 +29,12 @@
                             <img src="../assets/images/songs.svg" />
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./concerts.php">
                             <img src="../assets/images/show.svg" />
                         </a>
                     </li>
-                    <li>
+                    <li class="active">
                         <a href="./party.php">
                             <img src="../assets/images/party.svg" />
                         </a>

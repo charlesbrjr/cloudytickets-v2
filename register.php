@@ -1,10 +1,12 @@
 <?php
 /* <!-- REGISTRO DE USUARIO --> */
 session_start();
+include_once "config.php";
 
 $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
 $senha = filter_input(INPUT_POST, 'senha', FILTER_SANITIZE_STRING);
+$_SESSION['pwd'] = $senha;
 
 /* -----------VALIDADOR---------------- */
 $query = mysqli_query($dbOpen, "SELECT * FROM usuario WHERE email='$email'");
@@ -16,7 +18,6 @@ if (mysqli_num_rows($query) == 0) {
     $row = mysqli_fetch_array($query);
     $id = $row[0];
     $_SESSION['id'] = $id;
-    $_SESSION['pwd'] = $senha;
     mysqli_close($dbOpen);
     header("Location: ./src/home.php");
 } else {

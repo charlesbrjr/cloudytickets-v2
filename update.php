@@ -8,7 +8,7 @@ $query = mysqli_query($dbOpen, "SELECT * FROM usuario WHERE id_usuario=$id");
 $row = mysqli_fetch_array($query);
 $nome = $row[1];
 $email = $row[2];
-$senha = $row[3];
+$senha = $_SESSION['pwd'];
 
 $novoNome = filter_input(INPUT_POST, 'novoNome', FILTER_SANITIZE_STRING);
 $novoEmail = filter_input(INPUT_POST, 'novoEmail', FILTER_VALIDATE_EMAIL);
@@ -31,13 +31,14 @@ if ($email != $novoEmail) {
         $msg = $msg . "Email alterado\\n";
     } else {
         echo "<script type='text/javascript'>alert('Email já cadastrado');</script>";
-        echo "<script>javascript:window.location='User.php';</script>";
+        echo "<script>javascript:window.location='./src/User.php';</script>";
     }
 }
 
 //verificar se a senha foi mudada
 if ($senha != $novaSenha) {
-    $novaSenha = hash('md5', $_POST['novaSenha']);
+    $_SESSION['pwd'] = $novaSenha;
+    $novaSenha = hash('md5', $novaSenha);
     mysqli_query($dbOpen, "UPDATE usuario SET senha = '$novaSenha' WHERE id_usuario=$id");
     $msg = $msg . "Senha alterada";
 }

@@ -43,7 +43,7 @@
                                     <img src="../assets/images/titok.jpg" alt="Show da Lana Del Rey">
                                     <div>
                                         <button>
-                                            <a href="home.php" target="_blank" class="button">
+                                            <a target="_blank" class="button">
                                                 Em breve
                                             </a>
                                         </button>
