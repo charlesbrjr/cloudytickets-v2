@@ -3,7 +3,7 @@
 $name_db = 'ticketcloudy';
 $host_db = 'localhost';
 $user_db = 'root';
-$password_db = '';
+$password_db = 'usbw';
 
 //conectando ao banco 
 $dbOpen = mysqli_connect($host_db, $user_db, $password_db, $name_db);

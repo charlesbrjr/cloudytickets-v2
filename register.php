@@ -16,6 +16,7 @@ if (mysqli_num_rows($query) == 0) {
     $row = mysqli_fetch_array($query);
     $id = $row[0];
     $_SESSION['id'] = $id;
+    $_SESSION['pwd'] = $senha;
     mysqli_close($dbOpen);
     header("Location: ./src/home.php");
 } else {

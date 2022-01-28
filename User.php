@@ -22,7 +22,7 @@
     $row = mysqli_fetch_array($query);
     $nome = $row[1];
     $email = $row[2];
-    $senha = $row[3];
+    $senha = $_SESSION['pwd'];
 
     ?>
     <main>

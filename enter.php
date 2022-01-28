@@ -22,6 +22,7 @@ else {
             $query = mysqli_query($dbOpen, "SELECT id_usuario FROM usuario WHERE email='$email'");
             $row = mysqli_fetch_array($query);
             $id = $row[0];
+            $_SESSION['pwd'] = $senha;
             $_SESSION['id'] = $id;
 
             header("Location: ./src/home.php");
