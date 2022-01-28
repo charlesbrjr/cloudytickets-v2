@@ -28,4 +28,4 @@ O projeto CloudyTickets é baseado em um site onde o usuário pode visualizar co
 
 ---
 
-Feito com ♥ Charles Júnior e Shayane Teixeira
+Feito com ♥ Charles Junior e Shayane Teixeira
